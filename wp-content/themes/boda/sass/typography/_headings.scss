@@ -16,9 +16,10 @@ h2 {
   font-family: $mont, sans-serif;
   font-weight: normal;
   font-size: 1.25em;
+  margin-bottom: 0;
 }
 
-h3 {
+h4 {
   color: $blue;
   font-family: $mont, sans-serif;
   font-weight: normal;
@@ -27,13 +28,16 @@ h3 {
   letter-spacing: .1em;
 }
 
-h4 {
+h5 {
   color: $dkgrey;
   font-size: 1.625em;
-
-  
 }
 
+p {
+  font-family: $verd;
+  font-size: 1em;
+  line-height: 1.5em;
+}
 
 
 a:link, a:visited, a:hover, a:active {

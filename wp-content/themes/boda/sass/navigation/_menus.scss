@@ -1,9 +1,15 @@
 .main-navigation {
-	clear: both;
+  margin-top: 50px;
 	display: block;
 	float: left;
-	width: 100%;
-	
+  font-size: 1.125em;
+  font-family: $rock;
+
+#site-navigation {
+  clear: right;
+  float: left;
+  margin-top: 46px;
+}
 
 	ul {
 		display: none;
@@ -18,17 +24,21 @@
 			top: 1.5em;
 			left: -999em;
 			z-index: 99999;
+			background-color: $orange;
 
 			ul {
 				left: -999em;
 				top: 0;
 			}
+			
+			
+			
 
 			li {
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
-				}
+      	}
 			}
 
 			a {
@@ -37,6 +47,7 @@
 
 			:hover > a,
 			.focus > a {
+
 			}
 
 			a:hover,
@@ -66,6 +77,29 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+}
+
+
+.main-navigation li{
+		font-size: 1.1em;
+	  font-color: $dkgrey;
+}
+
+.main-navigation li a {
+  padding: 0 20px;
+}
+
+ul.sub-menu {
+  color: white;
+}
+
+.main-navigation li a, .main-navigation li a:visited {
+  color: $dkgrey;
+}
+
+.main-navigation li a:hover {
+  background-color: $orange;
+  color: white;
 }
 
 /* Small menu. */
