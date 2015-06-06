@@ -10,7 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
     <!-- display page titles, unless it's the front home page -->
-  	<?php if (is_front_page() ) { /*Do nothing*/ } else { the_title(); } ?>
+  	<?php if (is_front_page() ) { /*Do nothing*/ } else { the_title( '<h1 class="entry-title">', '</h1>'); } ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

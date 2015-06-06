@@ -110,13 +110,47 @@ function boda_widgets_init() {
 }
 add_action( 'widgets_init', 'boda_widgets_init' );
 
+
+////////custom post types//////////////////////
+
+
+/*
+// picture strips
+function create_posttype() {
+
+	register_post_type( 'strips',
+	// CPT Options
+		array(
+			'labels' => array(
+				'name' => __( 'Picture strips' ),
+				'singular_name' => __( 'Picture strip' )
+			),
+
+      'menu_position' => 5,
+			'public' => true,
+			'supports'      => array( 
+			'editor'),
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'strips'),
+		)
+	);
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype' );
+*/
+
+
+
+
+
+
+
 /**
  * Enqueue scripts and styles.
  */
 function boda_scripts() {
 	wp_enqueue_style( 'boda-style', get_stylesheet_uri() );
 	
-
 
 
   wp_enqueue_style( 'boda-google-fonts', 'http://fonts.googleapis.com/css?family=Rokkitt:400,700|Montserrat:400,700' );

@@ -1,5 +1,7 @@
 .widget {
 	margin: 0 0 1.5em;
+	clear: none;
+	float: right;
 
 	/* Make sure select elements fit in widgets. */
 	select {
@@ -10,4 +12,30 @@
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
+}
+
+
+/*for quote widgets*/
+.textwidget { /*change to quote widget class*/
+  border: 1px $ltgrey dashed;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.client-quote {
+  font-family: $rock;
+  font-weight: bold;
+  color: $ltgrey;
+  font-size: 1.525em;
+  line-height: 1.5em;
+  padding-bottom: 20px;
+}
+
+.quote-attribution {
+  font-family: $verd;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: $blue;
+  letter-spacing: .08em;
+  text-align: right;
 }
