@@ -114,30 +114,35 @@ add_action( 'widgets_init', 'boda_widgets_init' );
 ////////custom post types//////////////////////
 
 
-/*
-// picture strips
+
+// QUOTES
 function create_posttype() {
 
-	register_post_type( 'strips',
+	register_post_type( 'quotes',
 	// CPT Options
 		array(
 			'labels' => array(
-				'name' => __( 'Picture strips' ),
-				'singular_name' => __( 'Picture strip' )
+				'name' => __( 'Quotes' ),
+				'singular_name' => __( 'Quote' )
 			),
 
       'menu_position' => 5,
 			'public' => true,
-			'supports'      => array( 
-			'editor'),
+			'supports'      => array( 'title', 'custom-fields'),
+      'taxonomies' => array('category'),
 			'has_archive' => false,
-			'rewrite' => array('slug' => 'strips'),
+			'rewrite' => array('slug' => 'quotes'),
 		)
 	);
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
-*/
+
+
+
+
+
+
 
 
 

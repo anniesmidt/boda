@@ -4,7 +4,7 @@
         @include span-columns(3);
         float: left;
         margin-top: .5em;
-        margin-bottom: .25em;
+/*         margin-bottom: .25em; */
        }
       .main-navigation {
         float: right;
@@ -13,7 +13,13 @@
 }
 
 
+.site-navigation {
+  height: 47px;
+}
 
+h1.site-title {
+  margin-bottom: 0;
+}
 
 
 #content {

@@ -1,0 +1,94 @@
+Slider WD
+
+1.0.20
+  Fixed: Slider playback direction.
+
+1.0.19
+  Fixed: Slider width/height problem after Chrome update.
+  Fixed: Export.
+  Fixed: Carousel slider with one slide.
+
+1.0.18
+  Fixed: Conflict with some themes.
+  Fixed: Export sliders with images containing quotes.
+  Fixed: Carousel view on focus.
+
+1.0.17
+  New: Slider Export/Import.
+  Fixed: Delete slides whitout layers on slider delete.
+  Fixed: Image change effect in carousel views whith one image.
+  Fixed: Removed  "There is no slider selected or the slider was deleted." error message for unpublished sliders.
+  Fixed: Carousel view after Chrome update(23.05.15).
+  Fixed: Activate first slide tab after slider duplication.
+  Fixed: Active bullet and filmstrip thumbnail in carousel view.
+
+1.0.16
+  Changed: Featured plugins page.
+  New: Featured themes page.
+
+1.0.15
+  Changed: http to https.
+  Fixed: Youtube video thumbnail.
+
+1.0.14
+  Fixed: Disable enter key on text inputs.
+  New: Bulk add images by media uploader.
+
+1.0.13
+  Fixed: Image layer alt.
+  Fixed: Word break in Chrome.
+  Fixed: Conflict with Photo gallery.
+
+1.0.12
+  Fixed: Video layer.
+
+1.0.11
+  New: Carousel (pro version).
+  Fixed: Timer bar and bullets postion with horizontal filmstrip.
+  Fixed: Set watermark.
+
+1.0.10
+  Fixed: Slide change direction from 9 to 10.
+  Fixed: Layers with "Start with slide" option.
+
+1.0.9
+  Fixed: Licensing.
+
+1.0.8
+  New: Start with slide option.
+  New: Effect duration option.
+  Security issue: CSRF.
+
+1.0.7
+  New: Circle timer.
+  New: Slider duplication.
+  Fixed: Disable swipe on navigation off.
+  Fixed: Layer click on 3D animations.
+
+1.0.6
+  New: Slide duplication.
+  New: Image for Play/Pause buttons (Default, Custom, Styled).
+  New: Video layer (pro version).
+  Fixed: Conflict with some themes.
+
+1.0.5
+  New: Image for Next/Previous buttons (Default, Custom, Styled).
+  New: Image for bullets (Default, Custom, Styled).
+
+1.0.4
+  New: Stop on hover option.
+  New: Text layer, image layer link open in a new window option.
+
+1.0.3
+  Fixed: Single quota in image name.
+
+1.0.2
+  New: Turn SliderWD Media Upload.
+  New: Images Bulk Add.
+  Changed: Ajax save.
+  Changed: Change shortcode button.
+  Fixed: Timer bar.
+  Fixed: Fullwidth slider margin.
+
+1.0.1
+  New: Added user manual links.

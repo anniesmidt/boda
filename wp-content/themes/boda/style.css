@@ -243,7 +243,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #5e5f62;
   font-family: sans-serif;
   /* 	@include font-size(1); */
   line-height: 1.5; }
@@ -451,11 +451,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #9ea0a3; }
   a:visited {
-    color: purple; }
+    color: #9ea0a3; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #ff9e15; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -465,63 +465,77 @@ a {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  /*   margin-top: 50px; */
-  /* 	display: block; */
-  /* float: left; */
   font-size: 1.125em;
   font-family: "Rokkitt"; }
-  .main-navigation #site-navigation {
-    /*
-      clear: right;
-      float: left;
-      margin-top: 46px;
-    */ }
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding: 0; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5em;
+      top: 2.2em;
       left: -999em;
       z-index: 99999;
-      background-color: #ff9e15; }
+      line-height: 1em;
+      background-color: #ff9e15;
+      font-size: 1em;
+      padding-top: 1em; }
       .main-navigation ul ul ul {
         left: -999em;
-        top: 0; }
+        top: 0;
+        font-size: .6em;
+        line-height: 1.5em;
+        font-family: Verdana; }
       .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
         left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
     float: left;
     position: relative; }
+    .main-navigation li li {
+      padding: .4em 0; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    background-color: #ff9e15;
+    color: white;
+    padding-bottom: 15px; }
 
 .main-navigation li {
   font-size: 1.1em;
-  font-color: #5e5f62; }
-
-.main-navigation li a {
-  padding: 0 20px; }
-
-ul.sub-menu {
-  color: white; }
-
-.main-navigation li a, .main-navigation li a:visited {
   color: #5e5f62; }
 
-.main-navigation li a:hover {
+.main-navigation li a {
+  padding: 0 20px;
+  color: #5e5f62; }
+
+.main-navigation li a:hover, .main-navigation li a:active {
   background-color: #ff9e15;
-  color: white; }
+  color: white;
+  height: 2.2em; }
+
+ul.sub-menu {
+  color: white;
+  width: 9.375em; }
+  ul.sub-menu .sub-menu {
+    width: 18.75em; }
+
+.sub-menu li {
+  border-bottom: 1px solid;
+  border-bottom-color: #ffb144;
+  width: inherit;
+  margin-top: -1px; }
+
+.sub-menu li a:hover {
+  height: 1.25em; }
 
 /* Small menu. */
 .menu-toggle,
@@ -641,25 +655,28 @@ ul.sub-menu {
 .widget_search .search-submit {
   display: none; }
 
-/*for quote widgets*/
-.textwidget {
-  /*change to quote widget class*/
+/*for quote widgets and dynaic quote widgets*/
+.textwidget, .widget_ultimate_posts {
   border: 1px #9ea0a3 dashed;
   padding: 15px;
   border-radius: 15px; }
 
-.client-quote {
+/*hides titles of quotes widgets generated with ultimate quote widget and regular text widgets on the web page but not in the CMS, for ease of use in CMS*/
+.widget_ultimate_posts h1, .widget_text h1 {
+  display: none; }
+
+.client-quote, .custom-field-Quote {
   font-family: "Rokkitt";
   font-weight: bold;
   color: #9ea0a3;
-  font-size: 1.525em;
+  font-size: 24px;
   line-height: 1.5em;
   padding-bottom: 20px; }
 
-.quote-attribution {
+.quote-attribution, .custom-field-Quote_Attribution {
   font-family: Verdana;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: 16px;
   color: #5e869f;
   letter-spacing: .08em;
   text-align: right; }
@@ -682,12 +699,18 @@ ul.sub-menu {
     width: 23.23176%;
     float: left;
     margin-top: .5em;
-    margin-bottom: .25em; }
+    /*         margin-bottom: .25em; */ }
     #masthead .site-title:last-child {
       margin-right: 0; }
   #masthead .main-navigation {
     float: right;
     margin-top: 2.25em; }
+
+.site-navigation {
+  height: 47px; }
+
+h1.site-title {
+  margin-bottom: 0; }
 
 #content {
   max-width: 68em;
