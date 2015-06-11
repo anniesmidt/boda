@@ -19,6 +19,14 @@ h2 {
   margin-bottom: 0;
 }
 
+h2 a, h2 a:visited {
+  color: $orange;
+}
+
+h2 a:hover, h2 a:active {
+  color: $ltgrey;
+}
+
 h4 {
   color: $blue;
   font-family: $mont, sans-serif;

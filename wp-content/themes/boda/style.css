@@ -265,6 +265,12 @@ h2 {
   font-size: 1.25em;
   margin-bottom: 0; }
 
+h2 a, h2 a:visited {
+  color: #ff9e15; }
+
+h2 a:hover, h2 a:active {
+  color: #9ea0a3; }
+
 h4 {
   color: #5e869f;
   font-family: "Montserrat", sans-serif;
