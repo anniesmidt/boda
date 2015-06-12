@@ -140,11 +140,54 @@ add_action( 'init', 'create_posttype' );
 
 
 
+// BIOs
+function create_posttype_2() {
+
+	register_post_type( 'bios',
+	// CPT Options
+		array(
+			'labels' => array(
+				'name' => __( 'Bios' ),
+				'singular_name' => __( 'Bio' )
+			),
+
+      'menu_position' => 6,
+			'public' => true,
+			'supports'      => array( 'title', 'editor', 'custom-fields' ),
+      'taxonomies' => array('category'),
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'bio'),
+		)
+	);
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype_2' );
 
 
 
 
 
+
+
+
+
+////////short codes//////////////////////
+
+//add lorem ipsum
+function lorem_function() {
+  return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec nulla vitae lacus mattis volutpat eu at sapien. Nunc interdum congue libero, quis laoreet elit sagittis ut. Pellentesque lacus erat, dictum condimentum pharetra vel, malesuada volutpat risus. Nunc sit amet risus dolor. Etiam posuere tellus nisl. Integer lorem ligula, tempor eu laoreet ac, eleifend quis diam. Proin cursus, nibh eu vehicula varius, lacus elit eleifend elit, eget commodo ante felis at neque. Integer sit amet justo sed elit porta convallis a at metus. Suspendisse molestie turpis pulvinar nisl tincidunt quis fringilla enim lobortis. Curabitur placerat quam ac sem venenatis blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam sed ligula nisl. Nam ullamcorper elit id magna hendrerit sit amet dignissim elit sodales. Aenean accumsan consectetur rutrum.';
+}
+
+add_shortcode('lorem', 'lorem_function');
+
+
+
+//add PDF icon
+function pdf_icon() {
+  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/pdf_icon1.png">';
+}
+
+add_shortcode('PDF', 'pdf_icon');
 
 
 
