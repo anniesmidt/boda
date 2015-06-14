@@ -444,7 +444,8 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 3px;
+  color: #5e869f; }
 
 textarea {
   padding-left: 3px;
@@ -666,6 +667,9 @@ ul.sub-menu {
   border: 1px #9ea0a3 dashed;
   padding: 15px;
   border-radius: 15px; }
+
+.upw-posts article {
+  border: none; }
 
 /*hides titles of quotes widgets generated with ultimate quote widget and regular text widgets on the web page but not in the CMS, for ease of use in CMS*/
 .widget_ultimate_posts h1, .widget_text h1 {

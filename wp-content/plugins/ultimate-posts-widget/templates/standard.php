@@ -1,3 +1,24 @@
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+<script>
+function randomize_page_quotes() {
+  var all_quotes = $('.entry-custom-fields');
+  var quote_count = all_quotes.length;
+  var rand_quote = Math.floor(Math.random() * quote_count);
+
+  all_quotes.each(function(index) {
+    if (index !== rand_quote) {
+      this.style.display= 'none';
+    }  
+  });  
+}
+
+$(document).ready(function() {
+  randomize_page_quotes();
+});
+</script>
+
+
 <?php
 /**
  * Standard ultimate posts widget template

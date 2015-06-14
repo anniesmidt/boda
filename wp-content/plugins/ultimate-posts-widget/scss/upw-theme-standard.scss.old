@@ -3,10 +3,8 @@
   article {
     display: block;
     margin-bottom: 1.5em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em; 
     &:last-child {
-      border-bottom: 0;
       padding-bottom: 0;
     }
   }
