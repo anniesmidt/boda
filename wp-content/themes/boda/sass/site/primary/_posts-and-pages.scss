@@ -6,12 +6,13 @@
 	margin: 0 0 1.5em;
 }
 
-.byline,
+
 .updated:not(.published){
+  display:none;
+
 }
 
 time.updated {
-  display:none;
 }
 
 //meta info at top of blog post
@@ -27,8 +28,13 @@ time.updated {
   font-size: .9em;
   color: $orange;
   margin-top: 1.25em;
+  padding-bottom: .5em;
+  border-bottom: 1px dashed $ltgrey;
 }
 
+footer.entry-footer {
+  border: none;
+}
 
 
 //featured images on blog posts
