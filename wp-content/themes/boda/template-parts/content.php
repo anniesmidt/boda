@@ -20,6 +20,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+		<?php echo the_post_thumbnail('blog-images'); ?>
 		<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(

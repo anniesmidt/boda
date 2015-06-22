@@ -8,8 +8,100 @@
 
 .byline,
 .updated:not(.published){
-	display: none;
 }
+
+time.updated {
+  display:none;
+}
+
+//meta info at top of blog post
+.entry-meta {
+  margin-bottom: 1.7em;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+//meta info at bottom of blog post
+.entry-footer {
+  text-transform: uppercase;
+  font-size: .9em;
+  color: $orange;
+  margin-top: 1.25em;
+}
+
+
+
+//featured images on blog posts
+.wp-post-image {
+  float: left;
+  margin-right: 2em;
+  border: 1px solid $ltgrey;
+  
+}
+
+
+//comments 
+.comments-title {
+  color: $blue;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  border-top: 1px $ltgrey dashed;
+  padding-top: .5em;
+  margin-top: 3em;
+  font-size: 1.75em;
+
+
+
+}
+
+
+
+ol.comment-list {
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px $ltgrey dashed;
+}
+
+ol.comment-list a.url {
+  color: $blue;
+}
+
+ol.comment-list time {
+  text-transform: uppercase;
+  font-size: .8em;
+  margin-bottom: 1em;
+}
+
+.comment-metadata {
+  margin-bottom: 1em;
+}
+
+h3#reply-title {
+  color: $blue;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: .1em;
+  margin-bottom: 0;
+}
+
+
+p.logged-in-as {
+  color: $ltgrey;
+  font-size: .7em;
+  text-transform: uppercase;
+}
+
+.comment-form-comment label, #commentform code, #form-allowed-tags {
+  display: none;
+}
+
+p.form-submit {
+  float: right;
+}
+
+
 
 .single .byline,
 .group-blog .byline {
@@ -26,3 +118,5 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+

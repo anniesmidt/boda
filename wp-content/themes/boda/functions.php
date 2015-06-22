@@ -39,6 +39,7 @@ function boda_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'blog-images', 250, 250, false);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -99,7 +100,7 @@ add_action( 'after_setup_theme', 'boda_content_width', 0 );
  */
 function boda_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'boda' ),
+		'name'          => esc_html__( 'General Sidebar', 'boda' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -109,6 +110,23 @@ function boda_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'boda_widgets_init' );
+
+
+
+function boda_widgets_init2() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Blog Sidebar', 'boda' ),
+		'id'            => 'sidebar-blog',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'boda_widgets_init2' );
+
+
 
 
 ////////custom post types//////////////////////
@@ -140,28 +158,8 @@ add_action( 'init', 'create_posttype' );
 
 
 
-// BIOs
-function create_posttype_2() {
 
-	register_post_type( 'bios',
-	// CPT Options
-		array(
-			'labels' => array(
-				'name' => __( 'Bios' ),
-				'singular_name' => __( 'Bio' )
-			),
 
-      'menu_position' => 6,
-			'public' => true,
-			'supports'      => array( 'title', 'editor', 'custom-fields' ),
-      'taxonomies' => array('category'),
-			'has_archive' => false,
-			'rewrite' => array('slug' => 'bio'),
-		)
-	);
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype_2' );
 
 
 

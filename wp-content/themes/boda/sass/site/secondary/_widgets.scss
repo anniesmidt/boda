@@ -52,3 +52,48 @@
   letter-spacing: .08em;
   text-align: right;
 }
+
+
+///////BIO PAGES — large photos in widget/////
+img.hwim-image {
+  border-radius: 10px;
+}
+
+.widget_hwim h1.widget-title {
+  display: none;
+}
+
+
+///////////BLOG WIDGETS///////////
+.widget_nav_menu {
+   border: 1px $ltgrey dashed;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    width: em(220);
+}
+
+.widget_nav_menu h1.widget-title {
+  font-family: $verd;
+  font-size: 18px;
+  color: $blue;
+  text-transform: uppercase;
+  font-weight: normal;
+  
+}
+
+#menu-blog-categories-menu, #menu-more-insights {
+  margin: 0;
+  padding: 0;
+  
+}
+
+#nav_menu-2, #nav_menu-3 {
+  float: left;
+  margin-left: 17px;
+}
+
+
+

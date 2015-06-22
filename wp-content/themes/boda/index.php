@@ -1,4 +1,7 @@
 <?php
+
+// USED BY MAIN BLOG PAGE IN BODA THEME
+
 /**
  * The main template file.
  *
@@ -44,5 +47,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('blog'); ?>
 <?php get_footer(); ?>

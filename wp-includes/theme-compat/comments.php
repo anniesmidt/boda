@@ -65,7 +65,7 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
 
 <div id="respond">
 
-<h3><?php comment_form_title( __('Leave a Reply'), __('Leave a Reply to %s' ) ); ?></h3>
+<h3><?php comment_form_title( __('Please leave a comment'), __('Please leave a reply to %s' ) ); ?></h3>
 
 <div id="cancel-comment-reply">
 	<small><?php cancel_comment_reply_link() ?></small>

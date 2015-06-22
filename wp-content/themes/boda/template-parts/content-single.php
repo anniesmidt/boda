@@ -17,6 +17,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+	  <?php echo the_post_thumbnail('blog-images'); ?>
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
