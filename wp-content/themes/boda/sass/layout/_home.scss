@@ -1,1 +1,80 @@
+.page-id-2 #primary, .page-id-2 #main {
+  width: 100%
+}
 
+
+.page-id-2 #secondary.widget-area {
+  position: relative;
+  background-color: $orange;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+  top: -230px;
+  width: 100%;
+  }
+  
+  
+.page-id-2 h1.widget-title {//display titles for text
+  display: inline;
+  color: white;
+  font-size: 1.25em;
+  font-family: $mont;
+  margin-left: em(15);
+  margin-bottom: 0;
+}  
+
+#hwim-22 h1.widget-title, #hwim-23 h1.widget-title {//don't display titles for graphics
+  display: none;
+}
+  
+.page-id-2 .textwidget {//all widgets on this page
+  border: none;
+  font-family: $verd;
+  font-size: 1em;
+  padding-top: 0;
+  
+}  
+  
+#hwim-22 { //at boda image
+  float: left;
+  width: 100px;
+  margin-left: 25px;
+  margin-top: 25px;
+} 
+
+#hwim-23 {//boda people image
+  float: right;
+  width: 100px;
+  margin-right: 25px;
+  margin-top: 25px;
+}   
+
+#hwim-22 img, #hwim-23 img {//make images circles
+  border-radius: 50%;
+  
+}
+  
+#text-4   { //at boda text
+  width: 35%;
+  float: left;
+  color: white;
+  border: none;
+  margin-top: em(10);
+}
+  
+#text-5 { // boda people text
+  width: 35%;
+  float: left;
+  color: white;
+  margin-top: em(10);
+  margin-left: em(23);
+}  
+
+#text-6 { //widget holding vertical line
+  width: 1%;
+  border-right: 2px dotted white;
+  float: left;
+  margin-top: em(10);
+  margin-left: em(15);
+  height: em(225);
+}

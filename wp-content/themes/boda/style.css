@@ -401,6 +401,27 @@ dt {
 dd {
   margin: 0 1.5em 1.5em; }
 
+ul {
+  margin: 0 0 1em 0;
+  padding: 0 0 0 1em;
+  /* make space for li's :before */
+  list-style: none; }
+
+li {
+  position: relative;
+  padding-left: 0.4em;
+  /* text distance to icon */ }
+
+li:before {
+  font-family: 'FontAwesome';
+  content: '\f105';
+  position: absolute;
+  left: -1em;
+  /* same as ul padding-left */
+  top: 0em;
+  /* depends on character, maybe use padding-top instead */
+  color: #ff9e15; }
+
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -409,7 +430,27 @@ img {
 
 table {
   margin: 0 0 1.5em;
+  width: 45%;
+  border: 1pt #9ea0a3 dotted;
+  float: left;
+  clear: none;
+  margin-left: 10px; }
+  table td {
+    padding: 15px; }
+    table td tr img {
+      width: 32px; }
+
+.drives-us-icon {
+  width: 216px;
+  height: 216px; }
+
+.page-id-59 #main {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
   width: 100%; }
+  .page-id-59 #main:last-child {
+    margin-right: 0; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -929,6 +970,72 @@ p.form-submit {
 
 .bypostauthor {
   display: block; }
+
+.page-id-2 #primary, .page-id-2 #main {
+  width: 100%; }
+
+.page-id-2 #secondary.widget-area {
+  position: relative;
+  background-color: #ff9e15;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+  top: -230px;
+  width: 100%; }
+
+.page-id-2 h1.widget-title {
+  display: inline;
+  color: white;
+  font-size: 1.25em;
+  font-family: "Montserrat";
+  margin-left: 0.9375em;
+  margin-bottom: 0; }
+
+#hwim-22 h1.widget-title, #hwim-23 h1.widget-title {
+  display: none; }
+
+.page-id-2 .textwidget {
+  border: none;
+  font-family: Verdana;
+  font-size: 1em;
+  padding-top: 0; }
+
+#hwim-22 {
+  float: left;
+  width: 100px;
+  margin-left: 25px;
+  margin-top: 25px; }
+
+#hwim-23 {
+  float: right;
+  width: 100px;
+  margin-right: 25px;
+  margin-top: 25px; }
+
+#hwim-22 img, #hwim-23 img {
+  border-radius: 50%; }
+
+#text-4 {
+  width: 35%;
+  float: left;
+  color: white;
+  border: none;
+  margin-top: 0.625em; }
+
+#text-5 {
+  width: 35%;
+  float: left;
+  color: white;
+  margin-top: 0.625em;
+  margin-left: 1.4375em; }
+
+#text-6 {
+  width: 1%;
+  border-right: 2px dotted white;
+  float: left;
+  margin-top: 0.625em;
+  margin-left: 0.9375em;
+  height: 14.0625em; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

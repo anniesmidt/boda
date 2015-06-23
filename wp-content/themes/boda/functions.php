@@ -127,6 +127,19 @@ function boda_widgets_init2() {
 add_action( 'widgets_init', 'boda_widgets_init2' );
 
 
+function boda_widgets_init3() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Home Buckets', 'boda' ),
+		'id'            => 'home-buckets',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'boda_widgets_init3' );
+
 
 
 ////////custom post types//////////////////////
@@ -184,19 +197,52 @@ add_shortcode('lorem', 'lorem_function');
 function pdf_icon() {
   return '<img src="http://localhost/boda/wp-content/uploads/2015/06/pdf_icon1.png">';
 }
-
 add_shortcode('PDF', 'pdf_icon');
 
 
+//book
+function book_icon() {
+  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/book-icon.png">';
+}
+add_shortcode('BOOK', 'book_icon');
+
+
+//article
+function article_icon() {
+  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/article-icon.png">';
+}
+add_shortcode('ARTICLE', 'article_icon');
+
+
+//video
+function video_icon() {
+  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/video-icon.png">';
+}
+add_shortcode('VIDEO', 'video_icon');
+
+
+
+//podcast
+function podcast_icon() {
+  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/podcast-icon.png">';
+}
+add_shortcode('PODCAST', 'podcast_icon');
+
+
+//blogpost
+function blogpost_icon() {
+  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/blogpost-icon.png">';
+}
+add_shortcode('BLOGPOST', 'blogpost_icon');
 
 
 
 
 
 
-/**
- * Enqueue scripts and styles.
- */
+
+//Enqueue scripts and styles.
+
 function boda_scripts() {
 	wp_enqueue_style( 'boda-style', get_stylesheet_uri() );
 	

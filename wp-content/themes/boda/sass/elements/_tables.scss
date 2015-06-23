@@ -1,4 +1,26 @@
 table {
 	margin: 0 0 1.5em;
-	width: 100%;
+	width: 45%;
+	border: 1pt $ltgrey dotted;
+	float: left;
+	clear: none;
+	margin-left: 10px;
+  td {
+    padding: 15px;
+    tr img {
+      width: 32px;
+    }
+    
+  }
+
+}
+
+
+.drives-us-icon {
+  width: 216px;
+  height: 216px;
+}
+
+.page-id-59 #main {
+  @include span-columns(12);
 }
