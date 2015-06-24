@@ -8,6 +8,7 @@
 	ul { //main nav
 		display: none;
 		list-style: none;
+		list-style-image: none;
 		margin: 0;
 		padding: 0;
 
@@ -114,6 +115,11 @@
   height: 2.2em;
 }
 
+#primary-menu li:before {
+  list-style: none;
+  content: '';
+}
+
 
 ul.sub-menu {
   color: white;
@@ -138,6 +144,9 @@ ul.sub-menu {
 
   
 }
+
+
+
 
 
 

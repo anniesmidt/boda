@@ -1,4 +1,7 @@
-table {
+// Move this all into a "what drives us" partial
+
+/*
+table   {
 	margin: 0 0 1.5em;
 	width: 45%;
 	border: 1pt $ltgrey dotted;
@@ -14,6 +17,31 @@ table {
   }
 
 }
+*/
+
+.two-topic-table {//spans the page
+  float: left;
+  width: 100%;
+    td {//each topic is half of table
+      width: 50%;
+    }
+    table {//nested tables span their column
+      width: 100%;
+      border: none;
+        td {//adds space btw nested table items
+          padding-top: 20px;
+        }
+        td:first-child {//first row of nested table, with icon is skinnier, padding after icon
+          width: 10%;
+          text-align: right;
+          padding-right: 15px;
+        }
+                
+    }
+}
+
+
+
 
 
 .drives-us-icon {

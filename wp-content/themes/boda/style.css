@@ -300,11 +300,14 @@ h4 {
   font-weight: normal;
   font-size: 1.75em;
   text-transform: uppercase;
-  letter-spacing: .1em; }
+  letter-spacing: .1em;
+  border-top: 1px #9ea0a3 dashed; }
 
 h5 {
-  color: #5e5f62;
-  font-size: 1.625em; }
+  color: #5e869f;
+  font-size: 1.1em;
+  font-family: "Montserrat";
+  margin-bottom: 0; }
 
 p {
   font-family: Verdana;
@@ -382,10 +385,11 @@ hr {
   margin-bottom: 1.5em; }
 
 ul, ol {
-  margin: 0 0 1.5em 3em; }
+  margin: 0 0 1.5em 3em;
+  font-size: 1em; }
 
 ul {
-  list-style: disc; }
+  /* 	list-style: disc; */ }
 
 ol {
   list-style: decimal; }
@@ -428,17 +432,38 @@ img {
   max-width: 100%;
   /* Adhere to container width. */ }
 
-table {
-  margin: 0 0 1.5em;
-  width: 45%;
-  border: 1pt #9ea0a3 dotted;
+/*
+table   {
+	margin: 0 0 1.5em;
+	width: 45%;
+	border: 1pt $ltgrey dotted;
+	float: left;
+	clear: none;
+	margin-left: 10px;
+  td {
+    padding: 15px;
+    tr img {
+      width: 32px;
+    }
+    
+  }
+
+}
+*/
+.two-topic-table {
   float: left;
-  clear: none;
-  margin-left: 10px; }
-  table td {
-    padding: 15px; }
-    table td tr img {
-      width: 32px; }
+  width: 100%; }
+  .two-topic-table td {
+    width: 50%; }
+  .two-topic-table table {
+    width: 100%;
+    border: none; }
+    .two-topic-table table td {
+      padding-top: 20px; }
+    .two-topic-table table td:first-child {
+      width: 10%;
+      text-align: right;
+      padding-right: 15px; }
 
 .drives-us-icon {
   width: 216px;
@@ -547,6 +572,7 @@ a {
   .main-navigation ul {
     display: none;
     list-style: none;
+    list-style-image: none;
     margin: 0;
     padding: 0; }
     .main-navigation ul ul {
@@ -598,6 +624,10 @@ a {
   background-color: #ff9e15;
   color: white;
   height: 2.2em; }
+
+#primary-menu li:before {
+  list-style: none;
+  content: ''; }
 
 ul.sub-menu {
   color: white;
@@ -735,7 +765,7 @@ ul.sub-menu {
 /*for quote widgets and dynaic quote widgets*/
 .textwidget, .widget_ultimate_posts {
   border: 1px #9ea0a3 dashed;
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px; }
 
 .upw-posts article {
@@ -749,14 +779,14 @@ ul.sub-menu {
   font-family: "Rokkitt";
   font-weight: bold;
   color: #9ea0a3;
-  font-size: 24px;
-  line-height: 1.5em;
+  font-size: 20px;
+  line-height: 1.3em;
   padding-bottom: 20px; }
 
 .quote-attribution, .custom-field-Quote_Attribution {
   font-family: Verdana;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   color: #5e869f;
   letter-spacing: .08em;
   text-align: right; }
@@ -790,6 +820,12 @@ img.hwim-image {
 #nav_menu-2, #nav_menu-3 {
   float: left;
   margin-left: 17px; }
+
+#nav_menu-4 {
+  padding-right: 10px;
+  padding-left: 10px; }
+  #nav_menu-4 li {
+    padding-bottom: 16px; }
 
 /*--------------------------------------------------------------
 # Content
@@ -955,6 +991,9 @@ p.form-submit {
   clear: both;
   margin: 0 0 1.5em; }
 
+#gallery-2 img.attachment-thumbnail {
+  border-radius: 0; }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -977,8 +1016,7 @@ p.form-submit {
 .page-id-2 #secondary.widget-area {
   position: relative;
   background-color: #ff9e15;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 15px;
   margin: 0;
   top: -230px;
   width: 100%; }

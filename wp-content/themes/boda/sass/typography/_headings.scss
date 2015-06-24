@@ -63,11 +63,14 @@ h4 {
   font-size: 1.75em;
   text-transform: uppercase;
   letter-spacing: .1em;
+  border-top: 1px $ltgrey dashed;
 }
 
 h5 {
-  color: $dkgrey;
-  font-size: 1.625em;
+  color: $blue;
+  font-size: 1.1em;
+  font-family: $mont;
+  margin-bottom: 0;
 }
 
 p {

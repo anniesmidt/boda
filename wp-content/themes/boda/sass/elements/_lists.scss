@@ -1,9 +1,10 @@
 ul, ol {
 	margin: 0 0 1.5em 3em;
+	font-size: 1em;
 }
 
 ul {
-	list-style: disc;
+/* 	list-style: disc; */
 }
 
 ol {
@@ -24,6 +25,8 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 
+
+//-------use special bullets--------//
 ul {
     margin: 0 0 1em 0;
     padding: 0 0 0 1em; /* make space for li's :before */
