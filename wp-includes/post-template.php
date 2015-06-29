@@ -345,9 +345,9 @@ function the_excerpt() {
  * @return string
  */
 function get_the_excerpt( $deprecated = '' ) {
+
 	if ( !empty( $deprecated ) )
 		_deprecated_argument( __FUNCTION__, '2.3' );
-
 	$post = get_post();
 	if ( empty( $post ) ) {
 		return '';
@@ -364,8 +364,16 @@ function get_the_excerpt( $deprecated = '' ) {
 	 *
 	 * @param string $post_excerpt The post excerpt.
 	 */
+	 
 	return apply_filters( 'get_the_excerpt', $post->post_excerpt );
 }
+
+function boda_excerpt_more($more) {
+    global $post;
+    return '<div class="view-full-post"><a href="'. get_permalink($post->ID) . '" class="view-full-post-btn">View Full Post</a></div>';
+}
+add_filter('excerpt_more', 'boda_excerpt_more');
+
 
 /**
  * Whether post has excerpt.

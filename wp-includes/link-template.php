@@ -2237,8 +2237,8 @@ function posts_nav_link( $sep = '', $prelabel = '', $nxtlabel = '' ) {
  */
 function get_the_post_navigation( $args = array() ) {
 	$args = wp_parse_args( $args, array(
-		'prev_text'          => '%title',
-		'next_text'          => '%title',
+		'prev_text'          => '« Previous post',
+		'next_text'          => 'Next post »',
 		'screen_reader_text' => __( 'Post navigation' ),
 	) );
 
@@ -2291,8 +2291,8 @@ function get_the_posts_navigation( $args = array() ) {
 	// Don't print empty markup if there's only one page.
 	if ( $GLOBALS['wp_query']->max_num_pages > 1 ) {
 		$args = wp_parse_args( $args, array(
-			'prev_text'          => __( 'Older posts' ),
-			'next_text'          => __( 'Newer posts' ),
+			'prev_text'          => __( '« Older posts' ),
+			'next_text'          => __( 'Newer posts »' ),
 			'screen_reader_text' => __( 'Posts navigation' ),
 		) );
 

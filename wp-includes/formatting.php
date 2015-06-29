@@ -2622,6 +2622,7 @@ function wp_trim_excerpt($text = '') {
 		 * @param int $number The number of words. Default 55.
 		 */
 		$excerpt_length = apply_filters( 'excerpt_length', 55 );
+		
 		/**
 		 * Filter the string in the "more" link displayed after a trimmed excerpt.
 		 *
