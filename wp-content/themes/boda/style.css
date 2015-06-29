@@ -1029,10 +1029,10 @@ p.form-submit {
   margin-left: 0.9375em;
   margin-bottom: 0; }
 
-#hwim-22 h1.widget-title, #hwim-23 h1.widget-title {
+#hwim-22 h1.widget-title, #sticky-posts-13 h1.widget-title {
   display: none; }
 
-.page-id-2 .textwidget {
+.page-id-2 .textwidget, #sticky-posts-13 {
   border: none;
   font-family: Verdana;
   font-size: 1em;
@@ -1044,14 +1044,18 @@ p.form-submit {
   margin-left: 25px;
   margin-top: 25px; }
 
-#hwim-23 {
+.page-id-2 img.attachment-thumbnail.wp-post-image {
   float: right;
   width: 100px;
   margin-right: 25px;
-  margin-top: 25px; }
+  margin-top: 0px;
+  border: none; }
 
-#hwim-22 img, #hwim-23 img {
+#hwim-22 img, .page-id-2 img.attachment-thumbnail.wp-post-image {
   border-radius: 50%; }
+
+#text-4 .textwidget {
+  margin-left: 0.625em; }
 
 #text-4 {
   width: 35%;
@@ -1066,6 +1070,9 @@ p.form-submit {
   color: white;
   margin-top: 0.625em;
   margin-left: 1.4375em; }
+
+#text-5 h1.widget-title {
+  margin-left: 0.4375em; }
 
 #text-6 {
   width: 1%;

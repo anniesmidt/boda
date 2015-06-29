@@ -172,6 +172,28 @@ add_action( 'init', 'create_posttype' );
 
 
 
+// QUOTES
+function create_posttype2() {
+
+	register_post_type( 'home_people',
+	// CPT Options
+		array(
+			'labels' => array(
+				'name' => __( 'Home People' ),
+				'singular_name' => __( 'Home People' )
+			),
+
+      'menu_position' => 6,
+			'public' => true,
+			'supports'      => array( 'title', 'thumbnail' ),
+      'taxonomies' => array('category'),
+			'has_archive' => false,
+			'rewrite' => array('slug' => 'home_people'),
+		)
+	);
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_posttype2' );
 
 
 
@@ -245,7 +267,6 @@ add_shortcode('BLOGPOST', 'blogpost_icon');
 
 
 
-
 //Enqueue scripts and styles.
 
 function boda_scripts() {
@@ -258,6 +279,9 @@ function boda_scripts() {
 	
 
 	wp_enqueue_style( 'boda-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+
+
+/* 	wp_enqueue_script( 'boda-hovers', get_template_directory_uri() . '/js/hovers.js', true ); */
 
 
 

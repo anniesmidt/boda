@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 // USED BY MAIN BLOG PAGE IN BODA THEME
 
@@ -23,6 +23,7 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+
 
 				<?php
 

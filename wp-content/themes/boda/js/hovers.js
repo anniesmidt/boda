@@ -8,3 +8,14 @@
   });
 </script>
 */
+
+
+<script>
+      alert ("alert");
+      $(function() {
+        $( document ).tooltip();
+
+        });
+        
+        
+</script>

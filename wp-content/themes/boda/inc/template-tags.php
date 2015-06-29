@@ -19,6 +19,7 @@ function the_posts_navigation() {
 		return;
 	}
 	?>
+
 	<nav class="navigation posts-navigation" role="navigation">
 		<h2 class="screen-reader-text"><?php esc_html_e( 'Posts navigation', 'boda' ); ?></h2>
 		<div class="nav-links">
@@ -101,13 +102,15 @@ if ( ! function_exists( 'boda_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
+
 function boda_entry_footer() {
 	// Hide category and tag text for pages.
+
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'boda' ) );
 		if ( $categories_list && boda_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Topic: %1$s | ', 'boda' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( 'Topic: %1$s ', 'boda' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
@@ -119,7 +122,7 @@ function boda_entry_footer() {
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'boda' ), esc_html__( '1 Comment', 'boda' ), esc_html__( '% Comments', 'boda' ) );
+		comments_popup_link( esc_html__( 'Leave a comment', 'boda' ), esc_html__( '| 1 Comment', 'boda' ), esc_html__( '| % Comments', 'boda' ) );
 		echo '</span>';
 	}
 
