@@ -15,33 +15,13 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<!--     <link href="jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet"> -->
-    <!--
-<script src="http://localhost/boda/wp-includes/js/jquery/jquery.js"></script>
-    <script src="http://localhost/boda/wp-includes/js/jquery/ui/core.min.js"></script>
-    <script src="http://localhost/boda/wp-includes/js/jquery/ui/widget.min.js"></script>
-    <script src="http://localhost/boda/wp-includes/js/jquery/ui/position.min.js"></script>
-    <script src="http://localhost/boda/wp-includes/js/jquery/ui/tooltip.min.js"></script>
--->
-   
-
-
-<!--
-<script>
-      alert ("alert");
-      
-      $(function() {
-        $( document ).tooltip();
-
-        }); 
-        
-</script>
--->
-
+ 
 
 
 
 <?php wp_head(); ?>
+
+
 </head>
 
 

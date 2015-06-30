@@ -1160,9 +1160,9 @@ object {
   display: block; }
 
 /*----galleries--*/
-#gallery-2 .gallery-item {
+.page-id-55 #gallery-2 .gallery-item, .page-id-55 #gallery-2 .gallery-item {
   width: 140px; }
-#gallery-2 img {
+.page-id-55 #gallery-2 img, .page-id-55 #gallery-2 img {
   border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */

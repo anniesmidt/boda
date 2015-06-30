@@ -259,8 +259,22 @@ add_shortcode('BLOGPOST', 'blogpost_icon');
 
 
  
-  
+//register scripts
+add_action( 'wp_enqueue_scripts', 'boda_load_jquery' );
 
+function boda_load_jquery() {
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'jquery-ui-core' );
+    wp_enqueue_script( 'jquery-ui-widget' );
+    wp_enqueue_script( 'jquery-ui-position' );
+    wp_enqueue_script( 'jquery-ui-tooltip' );
+    
+    wp_enqueue_script( 'boda-hovers', get_template_directory_uri() . '/js/hovers.js', true );
+
+
+}
+  
+add_action('init', 'boda_load_jquery');
 
 
 
@@ -281,7 +295,6 @@ function boda_scripts() {
 	wp_enqueue_style( 'boda-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
 
 
-/* 	wp_enqueue_script( 'boda-hovers', get_template_directory_uri() . '/js/hovers.js', true ); */
 
 
 
