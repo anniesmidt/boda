@@ -49,7 +49,7 @@
 /*----galleries--*/
 
 //team and advisors galleries
-.page-id-55 #gallery-2, .page-id-55 #gallery-2 {
+.page-id-55 #gallery-2 {
   .gallery-item {
     width: 140px;
 
@@ -60,6 +60,13 @@
   }
 }
 
+//client logo gallery on who we help
+.page-id-8 #gallery-2 {
+  .gallery-item {
+  width: 150px;
+  vertical-align: middle;
+  }
+}
 
 
 

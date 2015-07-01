@@ -1,0 +1,79 @@
+.page-id-19 #content {
+  .entry-footer {
+    display: none;
+  }
+  #main {
+    @include span-columns(11);
+  }
+  #secondary.widget-area {
+    margin:0;
+    @include span-columns(12);
+  }
+  #nav_menu-6 {
+    float: left;
+    @include span-columns(12);
+    border: none;
+    padding-left: 0;
+  }
+  ul {
+    list-style:none;
+    margin: 0 0 1em 0;
+    padding: 0 0 0 1em;
+    li {
+      position: relative;
+      padding-left: 1.1em;
+      font-family: $mont;
+      font-size: 1.25em;
+      margin-bottom: 2em;
+      border-bottom: 1px $ltgrey dashed;
+      padding-bottom: 1.5em;
+        :before {
+          font-family: 'FontAwesome';
+          content: '\f140';
+          position: absolute;
+          left: -.5em; /* same as ul padding-left */
+          top: -.2em; /* depends on character, maybe use padding-top instead */
+          color: $blue;
+          font-size: 1.5em;
+          }
+        a {
+          color: $orange;
+        }
+        a:hover, a:active {
+          color: $blue;
+      }          
+    }
+  }
+}
+
+//previous next nav
+.case-prev-next {
+  padding: .25em;
+  text-align: center;
+  background-color: $orange;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 3em;
+  a.prev-page-anchor, a.next-page-anchor {
+    color: white;
+    font-family: $mont;
+    font-size: 1em;
+    position: relative;
+    top: -2px;
+    }
+  a:hover {
+    color: $blue;
+    
+  } 
+  .divider-pipe {
+    color: $blue;
+    font-size: 1.5em;
+    position: relative;
+    top: 3px;
+  }
+}
+
+
+
+
+    

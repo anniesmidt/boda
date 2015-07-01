@@ -256,7 +256,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #5e869f;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
-  font-size: 2.625em; }
+  font-size: 2.625em;
+  line-height: 1.25em; }
 
 .blog-page-title {
   text-transform: uppercase;
@@ -1082,6 +1083,81 @@ p.form-submit {
   margin-left: 0.9375em;
   height: 14.0625em; }
 
+.page-id-19 #content .entry-footer {
+  display: none; }
+.page-id-19 #content #main {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%; }
+  .page-id-19 #content #main:last-child {
+    margin-right: 0; }
+.page-id-19 #content #secondary.widget-area {
+  margin: 0;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .page-id-19 #content #secondary.widget-area:last-child {
+    margin-right: 0; }
+.page-id-19 #content #nav_menu-6 {
+  float: left;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border: none;
+  padding-left: 0; }
+  .page-id-19 #content #nav_menu-6:last-child {
+    margin-right: 0; }
+.page-id-19 #content ul {
+  list-style: none;
+  margin: 0 0 1em 0;
+  padding: 0 0 0 1em; }
+  .page-id-19 #content ul li {
+    position: relative;
+    padding-left: 1.1em;
+    font-family: "Montserrat";
+    font-size: 1.25em;
+    margin-bottom: 2em;
+    border-bottom: 1px #9ea0a3 dashed;
+    padding-bottom: 1.5em; }
+    .page-id-19 #content ul li :before {
+      font-family: 'FontAwesome';
+      content: '\f140';
+      position: absolute;
+      left: -.5em;
+      /* same as ul padding-left */
+      top: -.2em;
+      /* depends on character, maybe use padding-top instead */
+      color: #5e869f;
+      font-size: 1.5em; }
+    .page-id-19 #content ul li a {
+      color: #ff9e15; }
+    .page-id-19 #content ul li a:hover, .page-id-19 #content ul li a:active {
+      color: #5e869f; }
+
+.case-prev-next {
+  padding: .25em;
+  text-align: center;
+  background-color: #ff9e15;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 3em; }
+  .case-prev-next a.prev-page-anchor, .case-prev-next a.next-page-anchor {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1em;
+    position: relative;
+    top: -2px; }
+  .case-prev-next a:hover {
+    color: #5e869f; }
+  .case-prev-next .divider-pipe {
+    color: #5e869f;
+    font-size: 1.5em;
+    position: relative;
+    top: 3px; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -1160,9 +1236,13 @@ object {
   display: block; }
 
 /*----galleries--*/
-.page-id-55 #gallery-2 .gallery-item, .page-id-55 #gallery-2 .gallery-item {
+.page-id-55 #gallery-2 .gallery-item {
   width: 140px; }
-.page-id-55 #gallery-2 img, .page-id-55 #gallery-2 img {
+.page-id-55 #gallery-2 img {
   border-radius: 50%; }
+
+.page-id-8 #gallery-2 .gallery-item {
+  width: 150px;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */
