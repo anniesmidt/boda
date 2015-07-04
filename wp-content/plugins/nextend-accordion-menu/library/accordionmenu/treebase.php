@@ -93,6 +93,7 @@ class NextendTreebase {
                         break;
                     case 2:
                         foreach ($stack AS $s) {
+			    if($this->allItems[$s] == null) $this->allItems[$s] = new stdClass();
                             $this->allItems[$s]->active = true;
                         }
                         break;

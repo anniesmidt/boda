@@ -40,14 +40,23 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3em;
 }
 
-
-h2 {
+//normal H2 and constant contact event spot styles
+h2, .ctct_title a, .ctct_title a:visited{
   color: $orange;
   font-family: $mont, sans-serif;
   font-weight: normal;
   font-size: 1.25em;
   margin-bottom: 0;
-}
+  }
+  
+.ctct_title a:hover{
+    color: $blue;
+  }
+
+.ctct_extra_data {
+  padding-left: 0 !important;
+
+}  
 
 h2 a, h2 a:visited {
   color: $orange;

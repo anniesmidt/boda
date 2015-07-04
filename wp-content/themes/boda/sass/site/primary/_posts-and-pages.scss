@@ -131,3 +131,19 @@ p.form-submit {
 #gallery-2 img.attachment-thumbnail{
     border-radius: 0;
 }
+
+//post thumbnails
+.post .entry-content img {
+  width: 50%;
+  
+}
+
+.post {
+  padding-bottom: em(100);
+  border-bottom: 1px $ltgrey dashed;
+}
+
+.post h1.entry-title {
+  margin-top: em(10);
+}
+

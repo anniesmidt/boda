@@ -30,3 +30,33 @@ textarea {
 	width: 100%;
   color: $blue;
 }
+
+
+// Constant contact form on newsletter page
+form#sf_shortcode_constantcontact_0_form.constantcontactwidget_form p label {
+  font-size: .8em;
+  font-color: $blue;
+  font-weight: bold;
+  font-family: $verd;
+  text-transform: uppercase;
+  clear: right;
+  display: block;
+}
+
+form#sf_shortcode_constantcontact_0_form.constantcontactwidget_form p input[type="text"] {
+    width: 20em;
+  }
+
+
+.constantcontactwidget_form  {
+  font-family: $verd;
+  font-size: 1em;
+  font-color: $orange;
+}
+
+
+
+
+
+
+

@@ -75,13 +75,17 @@ img.hwim-image {
     width: em(220);
 }
 
-.widget_nav_menu h1.widget-title {
+h1.blog-widget-title, h1.newsletter-widget-title {
   font-family: $verd;
   font-size: 18px;
   color: $blue;
   text-transform: uppercase;
   font-weight: normal;
-  
+}
+
+
+#menu-more-insights li.current-menu-item {//hides current page item whatever page this widget is on
+  display: none;
 }
 
 #menu-blog-categories-menu, #menu-more-insights {
@@ -104,6 +108,55 @@ img.hwim-image {
   }
 }
 
+
+
+//contact page
+#nav_menu-8 {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+#nav_menu-8 h1.widget-title{
+  display: none;
+}
+
+#nav_menu-8 .menu-contact-page-menu-container{
+  padding-top: em(15);
+  padding-bottom: 0;
+}
+
+
+///////////sidebar buttons/////////
+.sidebar-buttons, .otw-button {
+  width: 100%;
+  border-radius: 10px !important;
+  font-family: $rock !important;
+  font-size: 1.25em !important;
+  border: none !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  letter-spacing: .05em;
+  
+}
+
+.sidebar-buttons:hover, .otw-button:hover {
+  background-color: $blue;
+  
+}
+
+////accordion menu////
+#nextendaccordionmenuwidget-2 {
+  width: 100%;
+  h1.widget-title {
+    font-size: 18px;
+    font-family: $verd;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+}
+
+#nextend-accordion-menu-nextendaccordionmenuwidget-2 dl.level1 dt a, #nextend-accordion-menu-nextendaccordionmenuwidget-2 dl.level1 dt a {
+    }
 
 
 

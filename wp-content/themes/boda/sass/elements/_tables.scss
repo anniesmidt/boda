@@ -41,12 +41,32 @@ table   {
 }
 
 
+table {
+  border-collapse: separate;
+  border: 1px $ltgrey dotted;
+}
+
+td {
+  border-left: 1px $ltgrey dotted;
+    td {
+    border-left: none;
+    padding-right: 1em;
+    border-bottom: none;
+    }
+    td:last-child {
+      padding-bottom: 1em;
+    }
+}
 
 
 
 .drives-us-icon {
   width: 216px;
   height: 216px;
+}
+
+img.drives-us-category  {
+  margin-top: em(10);
 }
 
 .page-id-59 #main {

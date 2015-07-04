@@ -7,6 +7,12 @@
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
+	
+	.wp-caption-text.gallery-caption{
+  	font-family: $verd;
+  	font-size: .75em;
+  	text-transform: uppercase;
+	}
 
 	.gallery-columns-2 & {
 		max-width: 50%;
@@ -49,7 +55,7 @@
 /*----galleries--*/
 
 //team and advisors galleries
-.page-id-55 #gallery-2 {
+.page-id-55 #gallery-2, .page-id-56 #gallery-2 {
   .gallery-item {
     width: 140px;
 
@@ -68,6 +74,9 @@
   }
 }
 
+.page-id-56 .site-main {
+  width: 100%;
+}
 
 
 

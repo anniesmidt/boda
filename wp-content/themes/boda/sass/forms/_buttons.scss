@@ -31,3 +31,29 @@ border-color: $color__border-button-focus;
 .wpcf7-form p input[type="submit"] {
   float: right;
 }
+
+//client Q&A popup buttons and modal styles
+.md-trigger {
+  background: $blue;
+  font-size: 1em;
+  text-align: left;
+  letter-spacing: .05em;
+  font-weight: normal;
+  font-family: $verd;
+  line-height: 1.4em;
+  border-radius: 15px;
+}
+
+.md-trigger:hover {
+    background-color: $ltgrey;
+  }
+
+.md-show.md-effect-1 .md-content {
+  transform: scale(.75);
+  width: 100%;
+  max-width: 100%;
+}
+
+.md-content h3 {
+  text-align: left;
+}

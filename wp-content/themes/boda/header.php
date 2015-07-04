@@ -49,6 +49,7 @@
 	</header><!-- #masthead -->
 
   <!-- add custom post type 'strip' to place where strip goes in page headers -->
+    <div class="strip">
     <?php echo get_post_meta($post->ID, "strip", true); ?>
-
+    </div>
 	<div id="content" class="site-content">

@@ -1,0 +1,142 @@
+///footer////
+
+.site-footer {
+	width: $size__site-main;
+  background-color: $blue; 
+  float: left;
+  margin-top: em(25); //keeps footer a bit away from bottom of content
+
+}
+
+.footer-menu {
+  @include span-columns(12);
+}
+
+.page-id-2 .site-main {//make home page content area short
+  height: em(750);
+}
+
+#nav_menu-7 {//menu in footer  
+  border: none;
+  margin-top: em(30);
+  margin-left: em(150);
+  margin-right: 0;
+  padding-right: 0;
+  float: left;
+  width: 50%;
+  a {
+    color: white;
+  ul {
+    margin: 0;
+    padding: 0;
+        
+    }
+  }
+}
+
+#nav_menu-7 .widget .widget_nav_menu {
+  padding: 0;
+  margin: 0;
+}
+
+#nav_menu-7 ul li, #nav_menu-7 ul li:before {
+      display: inline;
+      padding-left: 2em;
+    }
+
+#nav_menu-7 ul li:before {
+  top: -.25em;
+}
+
+#nav_menu-7 .widget_nav_menu {
+  margin-right: 0;
+}
+
+#sf_widget_constantcontact-2.widget.widget_sf_widget_constantcontact{
+    margin-right: em(100);
+    margin-top: em(22);
+}
+
+//CC signup in footer
+#sf_widget_constantcontact-2.widget.widget_sf_widget_constantcontact {
+  float: left;
+/*   margin-top: em(19); */
+  @include span-columns(2.5);
+  display: inline;
+  margin-left: em(40);
+}
+
+#sf_widget_constantcontact-2 {
+  padding: 0;
+}
+
+#sf_widget_constantcontact-2 h1.widget-title {
+  display: block;
+  color: white;
+  font-size: 1em;
+  font-family: $mont;
+  margin-bottom: em(15);
+  
+}
+
+#sf_widget_constantcontact-2 p label {
+  font-size: .8em;
+  color: white;
+  font-weight: normal;
+  letter-spacing: .1em;
+  font-family: $verd;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: em(3);
+}
+
+
+
+#sf_widget_constantcontact-2 p {
+  line-height: .75em;
+  margin-bottom: .75em;
+}
+
+
+#sf_widget_constantcontact-2 input[type="text"] {
+  background-color: tint($blue, 40%);
+  width: em(215);
+  }
+
+#sf_widget_constantcontact-2 input[type="submit"] {
+  clear: left;
+  width: 100px;
+  font-size: .9em;
+  padding: .5em;
+  float: right;
+}
+
+#sf_widget_constantcontact-2 input[type="submit"]:hover {
+    background-color: $ltgrey;
+  }
+  
+  
+//follow widget
+.textwidget {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+ 
+  
+}  
+#text-7.widget.widget_text {  
+   float: left !important;
+   margin-top: em(30);
+}
+
+
+
+
+//copyright
+#copyright {
+  font-size: .8em;
+  font-color: $dkgrey;
+  text-align: center;
+  padding-bottom: em(10);
+  
+}

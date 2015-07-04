@@ -17,6 +17,12 @@
   height: 47px;
 }
 
+.strip {
+  background-color: $ltgrey;
+  text-align: center;
+  line-height: 0;
+}
+
 h1.site-title {
   margin-bottom: 0;
 }
@@ -55,11 +61,4 @@ border: 1px $ltgrey dashed;
 }
 
 
-
-///footer////
-
-.site-footer {
-	clear: both;
-	width: $size__site-main;
-}
 

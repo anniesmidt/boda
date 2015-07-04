@@ -10,6 +10,8 @@ if ( ! is_active_sidebar( 'home-buckets' ) ) {
 }
 ?>
 
-<div id="secondary" class="widget-area" role="complementary">
+<div id="secondary" class="homebuckets widget-area" role="complementary">
+
 	<?php dynamic_sidebar( 'home-buckets' ); ?>
+
 </div><!-- #secondary -->

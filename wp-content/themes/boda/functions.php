@@ -62,6 +62,7 @@ function boda_setup() {
 	 * Enable support for Post Formats.
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
+/*
 	add_theme_support( 'post-formats', array(
 		'aside',
 		'image',
@@ -69,6 +70,7 @@ function boda_setup() {
 		'quote',
 		'link',
 	) );
+*/
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'boda_custom_background_args', array(
@@ -93,11 +95,8 @@ function boda_content_width() {
 add_action( 'after_setup_theme', 'boda_content_width', 0 );
 */
 
-/**
- * Register widget area.
- *
- * @link http://codex.wordpress.org/Function_Reference/register_sidebar
- */
+/*------- Register widget areas / sidebars ------*/
+//main
 function boda_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'General Sidebar', 'boda' ),
@@ -112,21 +111,22 @@ function boda_widgets_init() {
 add_action( 'widgets_init', 'boda_widgets_init' );
 
 
-
+//blog
 function boda_widgets_init2() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Blog Sidebar', 'boda' ),
-		'id'            => 'sidebar-blog',
+		'id'            => 'blog',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s blog-widget">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
+		'before_title'  => '<h1 class="widget-title blog-widget-title">',
 		'after_title'   => '</h1>',
 	) );
 }
 add_action( 'widgets_init', 'boda_widgets_init2' );
 
 
+//home
 function boda_widgets_init3() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Home Buckets', 'boda' ),
@@ -141,10 +141,10 @@ function boda_widgets_init3() {
 add_action( 'widgets_init', 'boda_widgets_init3' );
 
 
-
+//case studies
 function boda_widgets_init4() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Case Studies Page List', 'boda' ),
+		'name'          => esc_html__( 'List on Cases Page (not sidebar)', 'boda' ),
 		'id'            => 'cases',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -154,6 +154,38 @@ function boda_widgets_init4() {
 	) );
 }
 add_action( 'widgets_init', 'boda_widgets_init4' );
+
+
+//footer
+function boda_widgets_init5() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer', 'boda' ),
+		'id'            => 'footer',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'boda_widgets_init5' );
+
+
+//newsletter
+function boda_widgets_init6() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Newsletter Sidebar', 'boda' ),
+		'id'            => 'newsletter',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s newsletter-widget">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h1 class="widget-title newsletter-widget-title">',
+		'after_title'   => '</h1>',
+	) );
+}
+add_action( 'widgets_init', 'boda_widgets_init6' );
+
+
 
 
 ////////custom post types//////////////////////
@@ -186,7 +218,7 @@ add_action( 'init', 'create_posttype' );
 
 
 
-// QUOTES
+//people pix on home page
 function create_posttype2() {
 
 	register_post_type( 'home_people',
@@ -273,7 +305,7 @@ add_shortcode('BLOGPOST', 'blogpost_icon');
 
 
  
-//register scripts
+//register scripts (load jquery)
 add_action( 'wp_enqueue_scripts', 'boda_load_jquery' );
 
 function boda_load_jquery() {
@@ -282,8 +314,10 @@ function boda_load_jquery() {
     wp_enqueue_script( 'jquery-ui-widget' );
     wp_enqueue_script( 'jquery-ui-position' );
     wp_enqueue_script( 'jquery-ui-tooltip' );
-    
-    wp_enqueue_script( 'boda-hovers', get_template_directory_uri() . '/js/hovers.js', true );
+    //note: also need to load jquery ui css for tooltip to work right
+
+//uncomment to load hovers script for tooltips    
+/*     wp_enqueue_script( 'boda-hovers', get_template_directory_uri() . '/js/hovers.js', true ); */
 
 
 }
@@ -291,7 +325,11 @@ function boda_load_jquery() {
 add_action('init', 'boda_load_jquery');
 
 
-
+//set excerpt length for blog index page
+function custom_excerpt_length( $length ) {
+	return 26;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 

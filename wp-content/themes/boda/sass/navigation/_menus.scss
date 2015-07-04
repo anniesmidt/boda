@@ -3,6 +3,9 @@
   font-size: 1.125em;
   font-family: $rock;
   
+  li{
+    font-family: $rock;
+  }
 
 
 	ul { //main nav
@@ -105,19 +108,23 @@
 
 
 .main-navigation li a {
-  padding: 0 20px;
+  padding: 0 20px;//separates top level items from eachother horiz
   color: $dkgrey;
 }
 
 .main-navigation li a:hover, .main-navigation li a:active {
   background-color: $orange;
   color: white;
-  height: 2.2em;
+  padding-bottom: 15px;
+  /*   height: 2.2em; */
 }
 
 #primary-menu li:before {
   list-style: none;
   content: '';
+}
+
+li.menu-item {
 }
 
 
@@ -136,18 +143,21 @@ ul.sub-menu {
     border-bottom: 1px solid;
     border-bottom-color: tint($orange, 20%);
     width: inherit;
-    margin-top: -1px;
 }
 
 .sub-menu li a:hover {
-  height: 1.25em;
-
+  padding-bottom: 0;
   
+}
+
+.menu-item-has-children a:hover {
+  background-color: $orange;
+  color: white;
 }
 
 
 
-
+////////////////////////////////////////////
 
 
 /* Small menu. */

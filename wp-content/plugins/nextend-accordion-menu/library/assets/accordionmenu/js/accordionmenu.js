@@ -132,10 +132,25 @@
             }
         },
 
-        onOpenOrClose: function(e) {
-            var el = e.currentTarget;
-            if ((this.mode == "onmouseenter" || (this.mode == "both" && e.type != 'click')) && dojo.hasClass(el, 'opened')) return;
-            if (window.accordion.running) return;
+atimeout: false,
+
+onOpenOrClose: function(e){
+var type = e.type,
+currentTarget = e.currentTarget;
+if(this.atimeout){
+clearTimeout(this.atimeout);
+}
+this.atimeout = setTimeout(dojo.hitch(this, '_onOpenOrClose', currentTarget, type), 100);
+
+},
+
+        _onOpenOrClose: function(el, type/*e*/) {
+            //var el = e.currentTarget;
+//console.log(e);
+            if ((this.mode == "onmouseenter" || (this.mode == "both" && type != 'click')) && dojo.hasClass(el, 'opened')) return;
+            if (window.accordion.running){
+return;
+}
             else window.accordion.running = true;
             var h = parseInt(dojo.position(this.dds[el.i]).h);
             if (dojo.hasClass(el, 'opening') || dojo.hasClass(el, 'opened')) {

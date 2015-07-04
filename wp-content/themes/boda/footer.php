@@ -10,15 +10,17 @@
 ?>
 
 	</div><!-- #content -->
-
+	
+	
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<!--
-<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'boda' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'boda' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
--->
-			<!-- <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'boda' ), 'boda', '<a href="http://www.durablecreative.com" rel="designer">Annie Smidt at Durable Creative</a>' ); ?> -->
+  		<div class="footer-menu">
+  		<?php get_sidebar('footer'); ?>
+      </div>
+			
 		</div><!-- .site-info -->
+		<div id="copyright">©<?php echo date('Y'); ?> The Boda Group</div>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
