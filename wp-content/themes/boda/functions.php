@@ -102,9 +102,9 @@ function boda_widgets_init() {
 		'name'          => esc_html__( 'General Sidebar', 'boda' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s general-widget">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
+		'before_title'  => '<h1 class="widget-title general-widget-title">',
 		'after_title'   => '</h1>',
 	) );
 }
@@ -132,9 +132,9 @@ function boda_widgets_init3() {
 		'name'          => esc_html__( 'Home Buckets', 'boda' ),
 		'id'            => 'home-buckets',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s home-widget">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
+		'before_title'  => '<h1 class="widget-title home-widget-title">',
 		'after_title'   => '</h1>',
 	) );
 }
@@ -147,9 +147,9 @@ function boda_widgets_init4() {
 		'name'          => esc_html__( 'List on Cases Page (not sidebar)', 'boda' ),
 		'id'            => 'cases',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s case-widget">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
+		'before_title'  => '<h1 class="widget-title case-widget-title">',
 		'after_title'   => '</h1>',
 	) );
 }
@@ -162,9 +162,9 @@ function boda_widgets_init5() {
 		'name'          => esc_html__( 'Footer', 'boda' ),
 		'id'            => 'footer',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s footer-widget">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
+		'before_title'  => '<h1 class="widget-title footer-widget-title">',
 		'after_title'   => '</h1>',
 	) );
 }
@@ -263,28 +263,28 @@ add_shortcode('lorem', 'lorem_function');
 
 //add PDF icon
 function pdf_icon() {
-  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/pdf_icon1.png">';
+  return '<img src="../../wp-content/uploads/2015/06/pdf_icon1.png">';
 }
 add_shortcode('PDF', 'pdf_icon');
 
 
 //book
 function book_icon() {
-  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/book-icon.png">';
+  return '<img src="../../wp-content/uploads/2015/06/book-icon.png">';
 }
 add_shortcode('BOOK', 'book_icon');
 
 
 //article
 function article_icon() {
-  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/article-icon.png">';
-}
+  return '<img src="../../wp-content/uploads/2015/06/article-icon.png">';
+  }
 add_shortcode('ARTICLE', 'article_icon');
 
 
 //video
 function video_icon() {
-  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/video-icon.png">';
+  return '<img src="../../wp-content/uploads/2015/06/video-icon.png">';
 }
 add_shortcode('VIDEO', 'video_icon');
 
@@ -292,14 +292,14 @@ add_shortcode('VIDEO', 'video_icon');
 
 //podcast
 function podcast_icon() {
-  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/podcast-icon.png">';
+  return '<img src="../../wp-content/uploads/2015/06/podcast-icon.png">';
 }
 add_shortcode('PODCAST', 'podcast_icon');
 
 
 //blogpost
 function blogpost_icon() {
-  return '<img src="http://localhost/boda/wp-content/uploads/2015/06/blogpost-icon.png">';
+  return '<img src="../../wp-content/uploads/2015/06/blogpost-icon.png">';
 }
 add_shortcode('BLOGPOST', 'blogpost_icon');
 

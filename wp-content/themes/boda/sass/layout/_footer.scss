@@ -13,9 +13,11 @@
 }
 
 .page-id-2 .site-main {//make home page content area short
-  height: em(750);
+  height: em(700);
 }
 
+
+//////////FOOTER MENU/////////////////////
 #nav_menu-7 {//menu in footer  
   border: none;
   margin-top: em(30);
@@ -57,9 +59,9 @@
     margin-top: em(22);
 }
 
-//CC signup in footer
+//////////////CC signup in footer//////////////////
 #sf_widget_constantcontact-2.widget.widget_sf_widget_constantcontact {
-  float: left;
+  float: right;
 /*   margin-top: em(19); */
   @include span-columns(2.5);
   display: inline;
@@ -68,6 +70,8 @@
 
 #sf_widget_constantcontact-2 {
   padding: 0;
+  padding-left: 15px;
+  border-left: 1px tint($blue, 20%) solid;
 }
 
 #sf_widget_constantcontact-2 h1.widget-title {
@@ -101,6 +105,7 @@
 #sf_widget_constantcontact-2 input[type="text"] {
   background-color: tint($blue, 40%);
   width: em(215);
+  
   }
 
 #sf_widget_constantcontact-2 input[type="submit"] {
@@ -116,6 +121,7 @@
   }
   
   
+/*
 //follow widget
 .textwidget {
   border: none;
@@ -128,8 +134,15 @@
    float: left !important;
    margin-top: em(30);
 }
+*/
 
-
+//social
+#social {
+  text-align: center;
+  a:hover {
+    opacity: .5;
+  }
+}
 
 
 //copyright

@@ -33,7 +33,7 @@ border-color: $color__border-button-focus;
 }
 
 //client Q&A popup buttons and modal styles
-.md-trigger {
+.md-trigger {//button
   background: $blue;
   font-size: 1em;
   text-align: left;
@@ -42,6 +42,7 @@ border-color: $color__border-button-focus;
   font-family: $verd;
   line-height: 1.4em;
   border-radius: 15px;
+  text-shadow: none;
 }
 
 .md-trigger:hover {
@@ -52,6 +53,10 @@ border-color: $color__border-button-focus;
   transform: scale(.75);
   width: 100%;
   max-width: 100%;
+}
+.md-modal {
+  max-height: 100%;
+  overflow-y: scroll;
 }
 
 .md-content h3 {

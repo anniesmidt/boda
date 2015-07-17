@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: boda
 Theme URI: http://underscores.me/
@@ -331,6 +332,18 @@ p, entry-content {
 dfn, cite, em, i {
   font-style: italic; }
 
+.page-id-967 blockquote {
+  margin: 0 1.5em; }
+  .page-id-967 blockquote p {
+    color: #ff9e15;
+    padding-bottom: 1.25em;
+    border-bottom: 1px dashed #9ea0a3;
+    font-family: "Montserrat";
+    font-size: 1.1em;
+    line-height: 1.5em; }
+  .page-id-967 blockquote p:nth-child(even) {
+    color: #5e869f; }
+
 blockquote {
   margin: 0 1.5em; }
 
@@ -548,7 +561,8 @@ input[type="submit"] {
   font-weight: normal;
   font-family: Verdana;
   line-height: 1.4em;
-  border-radius: 15px; }
+  border-radius: 15px;
+  text-shadow: none; }
 
 .md-trigger:hover {
   background-color: #9ea0a3; }
@@ -557,6 +571,10 @@ input[type="submit"] {
   transform: scale(0.75);
   width: 100%;
   max-width: 100%; }
+
+.md-modal {
+  max-height: 100%;
+  overflow-y: scroll; }
 
 .md-content h3 {
   text-align: left; }
@@ -608,6 +626,12 @@ form#sf_shortcode_constantcontact_0_form.constantcontactwidget_form p input[type
   font-size: 1em;
   font-color: #ff9e15; }
 
+/*
+
+.sf_widget_constantcontact_2_form {
+  color: white;
+}
+*/
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -643,7 +667,7 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 2.2em;
+      top: 32px;
       left: -999em;
       z-index: 99999;
       line-height: 1em;
@@ -687,7 +711,7 @@ a {
 .main-navigation li a:hover, .main-navigation li a:active {
   background-color: #ff9e15;
   color: white;
-  padding-bottom: 15px;
+  padding-bottom: 2px;
   /*   height: 2.2em; */ }
 
 #primary-menu li:before {
@@ -712,17 +736,17 @@ ul.sub-menu {
   background-color: #ff9e15;
   color: white; }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
+@media screen and (max-width: 711px) {
+  #masthead h1.site-title {
+    width: 100%;
+    text-align: center; }
 
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
+  #site-navigation.main-navigation {
+    float: none;
+    width: 90%; } }
+.menu-toggle {
+  margin: 0 50%; }
 
-  .main-navigation ul {
-    display: block; } }
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -830,8 +854,8 @@ ul.sub-menu {
 .widget_search .search-submit {
   display: none; }
 
-/*for quote widgets and dynaic quote widgets*/
-.textwidget, .widget_ultimate_posts {
+/*for quote widgets and dynamic quote widgets*/
+.textwidget, .widget_ultimate_posts, .general-widget {
   border: 1px #9ea0a3 dashed;
   padding: 10px;
   border-radius: 15px; }
@@ -839,9 +863,26 @@ ul.sub-menu {
 .upw-posts article {
   border: none; }
 
-/*hides titles of quotes widgets generated with ultimate quote widget and regular text widgets on the web page but not in the CMS, for ease of use in CMS*/
-.widget_ultimate_posts h1, .widget_text h1 {
+/*hides titles can be used on widget in CMS but won't display on page*/
+.widget_ultimate_posts h1, .widget_text h1, .widget_hwim h1.widget-title {
   display: none; }
+
+.widget_nav_menu {
+  border: 1px #9ea0a3 dashed;
+  padding: 15px;
+  border-radius: 15px; }
+
+h1.blog-widget-title, h1.newsletter-widget-title, h1.general-widget-title {
+  font-family: Verdana;
+  font-size: 18px;
+  color: #5e869f;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 0px;
+  margin-top: 0px; }
+
+.blog-widget {
+  width: 100%; }
 
 .client-quote, .custom-field-Quote {
   font-family: "Rokkitt";
@@ -849,7 +890,8 @@ ul.sub-menu {
   color: #9ea0a3;
   font-size: 20px;
   line-height: 1.3em;
-  padding-bottom: 20px; }
+  padding-bottom: 15px;
+  padding-left: 5px; }
 
 .quote-attribution, .custom-field-Quote_Attribution {
   font-family: Verdana;
@@ -862,31 +904,11 @@ ul.sub-menu {
 img.hwim-image {
   border-radius: 10px; }
 
-.widget_hwim h1.widget-title {
-  display: none; }
-
-.widget_nav_menu {
-  border: 1px #9ea0a3 dashed;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 0px;
-  padding-bottom: 15px;
-  border-radius: 15px;
-  width: 13.75em; }
-
-h1.blog-widget-title, h1.newsletter-widget-title {
-  font-family: Verdana;
-  font-size: 18px;
-  color: #5e869f;
-  text-transform: uppercase;
-  font-weight: normal; }
+.widget_hwim {
+  border: none; }
 
 #menu-more-insights li.current-menu-item {
   display: none; }
-
-#menu-blog-categories-menu, #menu-more-insights {
-  margin: 0;
-  padding: 0; }
 
 #nav_menu-2, #nav_menu-3 {
   float: left;
@@ -900,7 +922,8 @@ h1.blog-widget-title, h1.newsletter-widget-title {
 
 #nav_menu-8 {
   width: 100%;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  padding-top: 0; }
 
 #nav_menu-8 h1.widget-title {
   display: none; }
@@ -1108,6 +1131,9 @@ p.form-submit {
 .post h1.entry-title {
   margin-top: 0.625em; }
 
+.page-id-967 #main.site-main {
+  width: 100%; }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -1219,24 +1245,19 @@ p.form-submit {
   width: 91.4702%; }
   .page-id-19 #content #main:last-child {
     margin-right: 0; }
-.page-id-19 #content #secondary.widget-area {
-  margin: 0;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .page-id-19 #content #secondary.widget-area:last-child {
-    margin-right: 0; }
-.page-id-19 #content #nav_menu-6 {
-  float: left;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  border: none;
-  padding-left: 0; }
-  .page-id-19 #content #nav_menu-6:last-child {
-    margin-right: 0; }
+  .page-id-19 #content #main #secondary.widget-area {
+    margin: 0;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .page-id-19 #content #main #secondary.widget-area:last-child {
+      margin-right: 0; }
+    .page-id-19 #content #main #secondary.widget-area #nav_menu-14.widget.widget_nav_menu {
+      float: left;
+      border: none;
+      padding-left: 0;
+      width: 100%; }
 .page-id-19 #content ul {
   list-style: none;
   margin: 0 0 1em 0;
@@ -1300,7 +1321,7 @@ p.form-submit {
     margin-right: 0; }
 
 .page-id-2 .site-main {
-  height: 46.875em; }
+  height: 43.75em; }
 
 #nav_menu-7 {
   border: none;
@@ -1335,7 +1356,7 @@ p.form-submit {
   margin-top: 1.375em; }
 
 #sf_widget_constantcontact-2.widget.widget_sf_widget_constantcontact {
-  float: left;
+  float: right;
   /*   margin-top: em(19); */
   float: left;
   display: block;
@@ -1347,7 +1368,9 @@ p.form-submit {
     margin-right: 0; }
 
 #sf_widget_constantcontact-2 {
-  padding: 0; }
+  padding: 0;
+  padding-left: 15px;
+  border-left: 1px #7e9eb2 solid; }
 
 #sf_widget_constantcontact-2 h1.widget-title {
   display: block;
@@ -1384,14 +1407,24 @@ p.form-submit {
 #sf_widget_constantcontact-2 input[type="submit"]:hover {
   background-color: #9ea0a3; }
 
+/*
+//follow widget
 .textwidget {
   border: none;
   padding: 0;
-  border-radius: 0; }
-
-#text-7.widget.widget_text {
-  float: left !important;
-  margin-top: 1.875em; }
+  border-radius: 0;
+ 
+  
+}  
+#text-7.widget.widget_text {  
+   float: left !important;
+   margin-top: em(30);
+}
+*/
+#social {
+  text-align: center; }
+  #social a:hover {
+    opacity: .5; }
 
 #copyright {
   font-size: .8em;

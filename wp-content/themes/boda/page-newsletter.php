@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying the Cases and Reults page *
- Template Name: Cases
+ Template Name: Newsletter
  * @package boda
  */
 

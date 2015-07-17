@@ -36,12 +36,12 @@
 	<header id="masthead" class="site-header" role="banner">
 		
 		<h1 class="site-title"> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-      <img src="http://localhost/boda/wp-content/uploads/2015/06/boda-logo.png""  alt="The Boda Group" /></a>
+      <img src="http://www.boda.durablecreative.com/wp-content/uploads/2015/06/boda-logo.png""  alt="The Boda Group" /></a>
     </h1>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-			<?php esc_html_e( 'Primary Menu', 'boda' ); ?></button>
+			<?php esc_html_e( 'menu', 'boda' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
   </div><!-- end PAGE-->		

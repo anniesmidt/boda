@@ -7,9 +7,27 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 
-blockquote {
+.page-id-967 blockquote {//styles for client feedback page
+	margin: 0 1.5em;
+
+	p {
+  	color: $orange;
+		padding-bottom: 1.25em;
+    border-bottom: 1px dashed $ltgrey;
+    font-family: $mont;
+    font-size: 1.1em;
+    line-height: 1.5em;
+	}
+	p:nth-child(even) {
+    color: $blue;
+  }
+
+}
+
+blockquote { // normal blockquotes
 	margin: 0 1.5em;
 }
+
 
 address {
 	margin: 0 0 1.5em;

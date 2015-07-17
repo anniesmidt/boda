@@ -18,6 +18,13 @@
   		<?php get_sidebar('footer'); ?>
       </div>
 			
+			<div id="social">
+			<a href="http://wwww.twitter.com/bodagroup"><img src="http://boda.durablecreative.com/wp-content/uploads/2015/07/twitter-3-24.png"></a>
+			&nbsp;
+			<a href="https://www.linkedin.com/company/the-boda-group"><img src="http://boda.durablecreative.com/wp-content/uploads/2015/07/linkedin-3-24.png"></a>
+			</div>
+			
+			
 		</div><!-- .site-info -->
 		<div id="copyright">©<?php echo date('Y'); ?> The Boda Group</div>
 

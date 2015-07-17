@@ -4,18 +4,19 @@
   }
   #main {
     @include span-columns(11);
+    #secondary.widget-area {
+      margin:0;
+      @include span-columns(12);
+      #nav_menu-14.widget.widget_nav_menu {
+        float: left;
+        border: none;
+        padding-left: 0;
+        width: 100%;
+        }
+      }
   }
-  #secondary.widget-area {
-    margin:0;
-    @include span-columns(12);
-  }
-  #nav_menu-6 {
-    float: left;
-    @include span-columns(12);
-    border: none;
-    padding-left: 0;
-  }
-  ul {
+    
+    ul {
     list-style:none;
     margin: 0 0 1em 0;
     padding: 0 0 0 1em;

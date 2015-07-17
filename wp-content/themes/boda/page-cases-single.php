@@ -20,20 +20,21 @@ get_header(); ?>
 
 
 <!-- uses ambrosite next/previous plugin to create nav at bottom -->            
+<!-- documentation: http://www.ambrosite.com/plugins/next-previous-post-link-plus-for-wordpress -->
 <div class="case-prev-next">
 <?php previous_page_link_plus( array(
                          'order_by' => 'menu_order',
                          'loop' => false,
-                         'max_length' => 37,
-                         'tooltip' => 'Previous case',
+                         'link' => 'Previous Case',
+                         'tooltip' => 'Previous Case',
                          'in_same_parent' => true,
                     ) );?> 
 <span class= "divider-pipe">||</span>
 <?php next_page_link_plus( array(
                          'order_by' => 'menu_order',
                          'loop' => false,
-                         'max_length' => 37,
-                         'tooltip' => 'Next case',
+                         'link' => "Next Case",
+                         'tooltip' => 'Next Case',
                          'in_same_parent' => true,
                     ) );?> 
 </div>
