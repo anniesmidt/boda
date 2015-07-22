@@ -3,7 +3,7 @@
   font-family: $rock;
   
   li{
-    font-family: $rock;
+    font-family: $rock; 
   }
 
 
@@ -109,6 +109,7 @@
 .main-navigation li a {
   padding: 0 20px;//separates top level items from eachother horiz
   color: $dkgrey;
+  height: 32px;
 }
 
 .main-navigation li a:hover, .main-navigation li a:active {
@@ -138,7 +139,7 @@ ul.sub-menu {
 }
 
 
-.sub-menu li{
+.sub-menu li{//lines between items in submenu
     border-bottom: 1px solid;
     border-bottom-color: tint($orange, 20%);
     width: inherit;
@@ -151,18 +152,31 @@ ul.sub-menu {
 
 .menu-item-has-children a:hover {
   background-color: $orange;
-  color: white;
+/*     padding-bottom: 2px; */
+    color: white;
 }
 
 
 
+.main-navigation li:hover > a {
+  background-color: $orange;
+/*   padding-bottom: 2px; */
+  color: white;
+}
+
+.main-navigation li li a {
+  height: auto;
+}
+
 ////////////////////////////////////////////
+/*
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
 }
+*/
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 0) {
 	.menu-toggle {
 		display: none;
 	}
@@ -170,29 +184,6 @@ ul.sub-menu {
 		display: block;
 	}
 }
-
-
-
-
-
-
-
-/* 
- @media screen and (max-width: 711px) { 
-    #masthead h1.site-title {
-    width: 100%;      
-    text-align: center;
- }
-  #site-navigation.main-navigation {
-    float: none;
-    width: 90%;
-  }
-}
-
-.menu-toggle {
-  margin: 0 50%;
-}
-*/
 
 
 

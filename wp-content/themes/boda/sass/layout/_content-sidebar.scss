@@ -44,6 +44,13 @@ h1.site-title {
   @include span-columns(8);
 }
 
+@media screen and (min-width: 640px) {//takes content away from edge on devices
+  .site-main {
+    margin-left: 30px;
+    }
+  }
+  
+
 .site-content .widget-area {
 	float: right;
 	overflow: hidden;

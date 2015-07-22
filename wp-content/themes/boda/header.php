@@ -15,7 +15,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
- 
 
 
 
@@ -40,8 +39,8 @@
     </h1>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-			<?php esc_html_e( 'menu', 'boda' ); ?></button>
+			<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<?php esc_html_e( '' ); ?></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
   </div><!-- end PAGE-->		

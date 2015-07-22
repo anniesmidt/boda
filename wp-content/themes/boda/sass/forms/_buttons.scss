@@ -39,7 +39,7 @@ border-color: $color__border-button-focus;
   text-align: left;
   letter-spacing: .05em;
   font-weight: normal;
-  font-family: $verd;
+  font-family: $mont;
   line-height: 1.4em;
   border-radius: 15px;
   text-shadow: none;
@@ -62,3 +62,18 @@ border-color: $color__border-button-focus;
 .md-content h3 {
   text-align: left;
 }
+
+.popup-button {
+  border: none !important; 
+  padding: 0 !important;
+}
+
+.popup-button .textwidget {
+  border: none !important;
+  padding: 0;
+}
+
+
+
+
+
