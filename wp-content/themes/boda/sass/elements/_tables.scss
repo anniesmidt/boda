@@ -36,6 +36,9 @@ table   {
           text-align: right;
           padding-right: 15px;
         }
+        td {// but the other cells, with icons and text, align top
+          vertical-align: top;
+        }
                 
     }
 }

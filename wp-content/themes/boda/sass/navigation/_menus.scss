@@ -1,9 +1,10 @@
 .main-navigation {
-  font-size: 1.125em;
-  font-family: $rock;
+  font-size: 1em;
+  font-family: $verd;
+
   
   li{
-    font-family: $rock; 
+    font-family: $verd; 
   }
 
 
@@ -19,12 +20,12 @@
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: 32px;
+			top: 37px;
 			left: -999em;
 			z-index: 99999;
-      line-height: 1em;
+      line-height: 1.2em;
 			background-color: $orange;
-			font-size: 1em;
+			font-size: .8em;
       padding-top: 1em;
 
       
@@ -109,13 +110,13 @@
 .main-navigation li a {
   padding: 0 20px;//separates top level items from eachother horiz
   color: $dkgrey;
-  height: 32px;
+  height: 37px;
 }
 
 .main-navigation li a:hover, .main-navigation li a:active {
   background-color: $orange;
   color: white;
-  padding-bottom: 2px;
+/*   padding-bottom: 2px; */
   /*   height: 2.2em; */
 }
 
