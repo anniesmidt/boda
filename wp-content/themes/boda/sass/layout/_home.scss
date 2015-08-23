@@ -113,6 +113,9 @@
   }
   .page-id-2 #secondary.homebuckets{ //smaller orange block
     width: 95%;
+    margin-left: -10px;
+    top: -160px;
+    
    } 
   #text-6 { // shorter dotted line
     height: 12em;
@@ -167,6 +170,12 @@
    margin: 15px 10px 0 10px;
    height: 17em;
   } 
+  .page-id-2 #secondary.homebuckets {//make orange go all the way across, sit under slider
+    top: -100px;
+  }
+  #main.site-main {
+    height: 550px;
+  }  
 }
 
 
@@ -185,7 +194,7 @@
   #text-6 {//hide dotted line
     display: none;
   }
-  #hwim-22 {
+  #hwim-22 {//first pic centered at top
     width: 80px;
     margin: 0 auto;
     padding-top: 10px;
@@ -197,18 +206,31 @@
   #text-5 { // space between two text blocks
     padding-top: 35px;
   }
-  .page-id-2 img.attachment-thumbnail.wp-post-image {
+  .page-id-2 img.attachment-thumbnail.wp-post-image {//second pic centered at bottom
     margin-bottom: 25px;
     width: 100px;
     margin-right: 0;
   }
   
-  #sticky-posts-13 {
+  #sticky-posts-13 {//second pic centered at bottom
     width: 100px;  
     margin: 0 auto;
     float: none;
   }
+
+
+
 }
 
+@media only screen and (min-width: 513px) and (max-width: 639px) {  
+  #hwim-22, #text-4, #text-5, #sticky-posts-13 {// get rid of all the floats so stuff stacks
+    font-size: .8em;
+  }
+}  
 
+@media only screen and (max-width: 513px) {  
+  #hwim-22, #text-4, #text-5, #sticky-posts-13 {// get rid of all the floats so stuff stacks
+    font-size: 1.1em;
+  }
+} 
 

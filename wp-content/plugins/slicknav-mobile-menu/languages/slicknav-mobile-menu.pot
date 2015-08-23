@@ -1,0 +1,275 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: slicknav-mobile-menu\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2015-06-28 17:00+1000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Neil Gee <ngowran@mac.com>\n"
+"Language-Team: WP Beaches <web@wpbeaches.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/options-page-wrapper.php:12
+msgid "SlickNav Mobile Menu Options"
+msgstr ""
+
+#: inc/options-page-wrapper.php:17
+msgid "Mobile Menu"
+msgstr ""
+
+#: inc/options-page-wrapper.php:30
+msgid "Select your menu to be used as the Mobile Menu from the dropdown"
+msgstr ""
+
+#: inc/options-page-wrapper.php:41 inc/options-page-wrapper.php:241
+msgid "SlickNav Mobile Menu Name"
+msgstr ""
+
+#: inc/options-page-wrapper.php:63
+msgid "Maximum width to use SlickNav (600px Default)"
+msgstr ""
+
+#: inc/options-page-wrapper.php:67 inc/options-page-wrapper.php:269
+msgid "Menu Background Color"
+msgstr ""
+
+#: inc/options-page-wrapper.php:71 inc/options-page-wrapper.php:273
+msgid "Menu Button Color"
+msgstr ""
+
+#: inc/options-page-wrapper.php:75 inc/options-page-wrapper.php:277
+msgid "Menu Label Color"
+msgstr ""
+
+#: inc/options-page-wrapper.php:79 inc/options-page-wrapper.php:281
+msgid "Menu Icon Color"
+msgstr ""
+
+#: inc/options-page-wrapper.php:83 inc/options-page-wrapper.php:285
+msgid "Menu Label Shadow"
+msgstr ""
+
+#: inc/options-page-wrapper.php:86 inc/options-page-wrapper.php:95
+#: inc/options-page-wrapper.php:288 inc/options-page-wrapper.php:297
+msgid "On"
+msgstr ""
+
+#: inc/options-page-wrapper.php:87 inc/options-page-wrapper.php:96
+#: inc/options-page-wrapper.php:289 inc/options-page-wrapper.php:298
+msgid "Off"
+msgstr ""
+
+#: inc/options-page-wrapper.php:92 inc/options-page-wrapper.php:294
+msgid "Menu Icon Shadow"
+msgstr ""
+
+#: inc/options-page-wrapper.php:101 inc/options-page-wrapper.php:303
+msgid "Menu Link Color"
+msgstr ""
+
+#: inc/options-page-wrapper.php:105 inc/options-page-wrapper.php:307
+msgid "Menu Link Hover Color"
+msgstr ""
+
+#: inc/options-page-wrapper.php:109 inc/options-page-wrapper.php:311
+msgid "Menu Link Hover Color, Containing SubMenus"
+msgstr ""
+
+#: inc/options-page-wrapper.php:113 inc/options-page-wrapper.php:315
+msgid "Menu Button Position"
+msgstr ""
+
+#: inc/options-page-wrapper.php:116 inc/options-page-wrapper.php:154
+#: inc/options-page-wrapper.php:319 inc/options-page-wrapper.php:357
+msgid "Right"
+msgstr ""
+
+#: inc/options-page-wrapper.php:117 inc/options-page-wrapper.php:153
+#: inc/options-page-wrapper.php:320 inc/options-page-wrapper.php:358
+msgid "Left"
+msgstr ""
+
+#: inc/options-page-wrapper.php:122 inc/options-page-wrapper.php:326
+msgid "Menu Font Size (16px Default)"
+msgstr ""
+
+#: inc/options-page-wrapper.php:126 inc/options-page-wrapper.php:330
+msgid "Menu Label Size (16px Default)"
+msgstr ""
+
+#: inc/options-page-wrapper.php:130 inc/options-page-wrapper.php:334
+msgid "Menu Label Weight"
+msgstr ""
+
+#: inc/options-page-wrapper.php:133 inc/options-page-wrapper.php:337
+msgid "Normal"
+msgstr ""
+
+#: inc/options-page-wrapper.php:134 inc/options-page-wrapper.php:338
+msgid "Bold"
+msgstr ""
+
+#: inc/options-page-wrapper.php:139 inc/options-page-wrapper.php:343
+msgid "Menu link font case"
+msgstr ""
+
+#: inc/options-page-wrapper.php:142 inc/options-page-wrapper.php:346
+msgid "None"
+msgstr ""
+
+#: inc/options-page-wrapper.php:143 inc/options-page-wrapper.php:347
+msgid "Capitalize"
+msgstr ""
+
+#: inc/options-page-wrapper.php:144 inc/options-page-wrapper.php:348
+msgid "Lowercase"
+msgstr ""
+
+#: inc/options-page-wrapper.php:145 inc/options-page-wrapper.php:349
+msgid "Uppercase"
+msgstr ""
+
+#: inc/options-page-wrapper.php:150 inc/options-page-wrapper.php:354
+msgid "SubMenu Button Indicator"
+msgstr ""
+
+#: inc/options-page-wrapper.php:159 inc/options-page-wrapper.php:363
+msgid "Menu Position (body by default, using body puts the Menu at the top."
+msgstr ""
+
+#: inc/options-page-wrapper.php:160 inc/options-page-wrapper.php:364
+msgid "However you can adjust this location by adding in a CSS class"
+msgstr ""
+
+#: inc/options-page-wrapper.php:164 inc/options-page-wrapper.php:368
+msgid ""
+"Menu Label (\"MENU\" by default, leave blank for no label and just the "
+"symbol)"
+msgstr ""
+
+#: inc/options-page-wrapper.php:168 inc/options-page-wrapper.php:172
+#: inc/options-page-wrapper.php:372 inc/options-page-wrapper.php:376
+msgid "Allow Parent Links"
+msgstr ""
+
+#: inc/options-page-wrapper.php:177 inc/options-page-wrapper.php:181
+#: inc/options-page-wrapper.php:382 inc/options-page-wrapper.php:386
+msgid "Show Child Links on Open"
+msgstr ""
+
+#: inc/options-page-wrapper.php:186 inc/options-page-wrapper.php:391
+msgid "Show search field at bottom of Menu"
+msgstr ""
+
+#: inc/options-page-wrapper.php:190 inc/options-page-wrapper.php:395
+msgid "Show search field"
+msgstr ""
+
+#: inc/options-page-wrapper.php:195 inc/options-page-wrapper.php:199
+msgid "Fix Menu to Head"
+msgstr ""
+
+#: inc/options-page-wrapper.php:204 inc/options-page-wrapper.php:409
+msgid ""
+"Enter a URL or upload an image for a logo smaller is better here, like 45px "
+"in depth and up to 200px in width"
+msgstr ""
+
+#: inc/options-page-wrapper.php:209
+msgid "Speed of Menu open/close (Higher numbers are slower)"
+msgstr ""
+
+#: inc/options-page-wrapper.php:222
+msgid "Closed Symbol, default &#9658;"
+msgstr ""
+
+#: inc/options-page-wrapper.php:226
+msgid "Opened Symbol, default &#9660;"
+msgstr ""
+
+#: inc/options-page-wrapper.php:230
+msgid "Save"
+msgstr ""
+
+#: inc/options-page-wrapper.php:265
+msgid "Maximum Width to use SlickNav (600px Default)"
+msgstr ""
+
+#: inc/options-page-wrapper.php:400
+msgid "Sticky Menu to Head"
+msgstr ""
+
+#: inc/options-page-wrapper.php:404
+msgid "Stick Menu to Head"
+msgstr ""
+
+#: inc/options-page-wrapper.php:414
+msgid "Speed of Menu open/close (Lower numbers are faster)"
+msgstr ""
+
+#: inc/options-page-wrapper.php:427
+msgid "Closed Symbol, default  "
+msgstr ""
+
+#: inc/options-page-wrapper.php:431
+msgid "Opened Symbol, default  "
+msgstr ""
+
+#: inc/options-page-wrapper.php:435
+msgid "Update"
+msgstr ""
+
+#: inc/options-page-wrapper.php:437
+msgid "Settings Updated"
+msgstr ""
+
+#: inc/options-page-wrapper.php:461
+msgid "Additional Resources"
+msgstr ""
+
+#: inc/options-page-wrapper.php:464
+msgid "More Slick Nav Info..."
+msgstr ""
+
+#: inc/options-page-wrapper.php:466
+msgid "SlickNav Home"
+msgstr ""
+
+#: inc/options-page-wrapper.php:467
+msgid "SlickNav GitHub"
+msgstr ""
+
+#: inc/options-page-wrapper.php:468
+msgid "WP Beaches Genesis Guide"
+msgstr ""
+
+#: inc/options-page-wrapper.php:469
+msgid "WP Beaches TwentyTwelve Guide"
+msgstr ""
+
+#: inc/options-page-wrapper.php:470
+msgid "Symbol Reference"
+msgstr ""
+
+#: slicknav-mobile-menu.php:208
+msgid "SlickNav Options Plugin"
+msgstr ""
+
+#: slicknav-mobile-menu.php:209
+msgid "SlickNav Menu"
+msgstr ""

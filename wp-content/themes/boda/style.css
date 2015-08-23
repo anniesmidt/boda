@@ -1266,7 +1266,9 @@ p.form-submit {
     font-size: .9em; }
 
   .page-id-2 #secondary.homebuckets {
-    width: 95%; }
+    width: 95%;
+    margin-left: -10px;
+    top: -160px; }
 
   #text-6 {
     height: 12em; }
@@ -1307,7 +1309,13 @@ p.form-submit {
 
   #text-6 {
     margin: 15px 10px 0 10px;
-    height: 17em; } }
+    height: 17em; }
+
+  .page-id-2 #secondary.homebuckets {
+    top: -100px; }
+
+  #main.site-main {
+    height: 550px; } }
 @media only screen and (max-width: 639px) {
   .page-id-2 #secondary.homebuckets {
     top: -49px;
@@ -1344,6 +1352,12 @@ p.form-submit {
     width: 100px;
     margin: 0 auto;
     float: none; } }
+@media only screen and (min-width: 513px) and (max-width: 639px) {
+  #hwim-22, #text-4, #text-5, #sticky-posts-13 {
+    font-size: .8em; } }
+@media only screen and (max-width: 513px) {
+  #hwim-22, #text-4, #text-5, #sticky-posts-13 {
+    font-size: 1.1em; } }
 .page-id-19 #content .entry-footer {
   display: none; }
 .page-id-19 #content #main {
