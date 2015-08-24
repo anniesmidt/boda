@@ -22,7 +22,6 @@ get_header(); ?>
 
       <?php endwhile; // End of the loop. ?>
 			
-		<?php get_sidebar('home-buckets'); ?>
 
 
 		</main><!-- #main -->
@@ -30,6 +29,7 @@ get_header(); ?>
 
 	</div><!-- #primary -->
 
+		<?php get_sidebar('home-buckets'); ?>
 
 
 <?php get_footer(); ?>

@@ -1,7 +1,26 @@
+//////special cases for home page///////
+
+.page-id-2 .entry-header { //turn off default header of content area (not real page header)
+  display: none;
+}
+
+.page-id-2 .entry-footer { //turn off default footer of content area (not real page footer)
+  display: none;
+}
+
+.page-id-2 #post-2, .page-id-2 #main {// take margin off main content entry area (that slider is in)
+  margin: 0;
+}
+
+
+
 //main content area goes across width of page
 .page-id-2 #primary, .page-id-2 #main {
   width: 100%
 }
+
+
+
 
 //secondary content area/orange block
 .page-id-2 #secondary.homebuckets{
@@ -9,8 +28,9 @@
   background-color: $orange;
   border-radius: 15px;
   margin: 0;
-  top: -230px;
+  top: -100px;
   width: 100%;
+  margin-bottom: -80px;
   }
 
 .page-id-2 .textwidget {//clears standard widget padding for this page
@@ -104,6 +124,7 @@
 
 //////////////BREAKPOINTS///////////////////
 
+/*
 @media only screen  and (min-width : 1024px) {
   #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
     width: 80px;
@@ -120,9 +141,6 @@
   #text-6 { // shorter dotted line
     height: 12em;
   } 
-  .page-id-2 #main.site-main { //less space under orange block
-    height: 32em;
-  }
 }
 
 @media only screen  and (min-width: 960px) and (max-width: 1024px) {
@@ -177,8 +195,67 @@
     height: 550px;
   }  
 }
+*/
+
+///MEDIUM BROWSER WINDOWS///
+@media only screen  and (min-width: 972px) and (max-width: 1024px) {
+   .page-id-2 #secondary.homebuckets { //sets up orange block for centering
+     width: 90%;
+     margin: 0 auto;
+     display: block;
+   }
+
+   .site-content .widget-area {// let's orange block be centered
+     float: none;
+   }
+
+    #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    width: 60px;
+    } 
+    
+    .page-id-2 .textwidget, #sticky-posts-13 { //smaller font-size
+    font-size: .85em;
+    }
+    
+   #text-4, #text-5 {//wider text columns
+    width: 36%;
+    } 
+       
+    #text-6 { //  dotted line
+      margin: 15px 10px 0 10px;
+      height: 10em;
+  } 
+}
+
+////SMALLER BROWSER WINDOWS////
+@media only screen  and (min-width: 640px) and (max-width: 971px) {
+
+    
+    #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    width: 55px;
+    } 
+ 
+     .page-id-2 .textwidget, #sticky-posts-13 { //smaller font-size
+    font-size: .8em;
+    }
+ }
 
 
+
+@media only screen  and (min-width: 640px) and (max-width: 710px) {
+
+   #text-5 {//narrow text columns
+    width: 30%;
+    } 
+   #text-4 {
+     width: 36%;
+   }
+   
+   } 
+   
+
+
+//////SMALLest and MOBILE////
 @media only screen and (max-width: 639px) {
   .page-id-2 #secondary.homebuckets {//make orange go all the way across, sit under slider
     top: -49px;

@@ -907,18 +907,18 @@ h1.blog-widget-title, h1.newsletter-widget-title, h1.general-widget-title {
   width: 100%; }
 
 .client-quote, .custom-field-Quote {
-  font-family: "Rokkitt";
-  font-weight: bold;
+  font-family: Verdana;
+  font-weight: normal;
   color: #9ea0a3;
-  font-size: 20px;
-  line-height: 1.3em;
+  font-size: 1em;
+  line-height: 1.6em;
   padding-bottom: 15px;
   padding-left: 5px; }
 
 .quote-attribution, .custom-field-Quote_Attribution {
   font-family: Verdana;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 1em;
   color: #5e869f;
   letter-spacing: .08em;
   text-align: right; }
@@ -1179,6 +1179,15 @@ p.form-submit {
 .bypostauthor {
   display: block; }
 
+.page-id-2 .entry-header {
+  display: none; }
+
+.page-id-2 .entry-footer {
+  display: none; }
+
+.page-id-2 #post-2, .page-id-2 #main {
+  margin: 0; }
+
 .page-id-2 #primary, .page-id-2 #main {
   width: 100%; }
 
@@ -1187,8 +1196,9 @@ p.form-submit {
   background-color: #ff9e15;
   border-radius: 15px;
   margin: 0;
-  top: -230px;
-  width: 100%; }
+  top: -100px;
+  width: 100%;
+  margin-bottom: -80px; }
 
 .page-id-2 .textwidget {
   padding: 0; }
@@ -1258,64 +1268,111 @@ p.form-submit {
   margin-top: 0.625em;
   height: 13em; }
 
-@media only screen and (min-width: 1024px) {
-  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image {
-    width: 80px; }
-
-  .page-id-2 .textwidget, #sticky-posts-13 {
-    font-size: .9em; }
-
-  .page-id-2 #secondary.homebuckets {
+/*
+@media only screen  and (min-width : 1024px) {
+  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    width: 80px;
+  }
+  .page-id-2 .textwidget, #sticky-posts-13 { //smaller font-size
+    font-size: .9em;
+  }
+  .page-id-2 #secondary.homebuckets{ //smaller orange block
     width: 95%;
     margin-left: -10px;
-    top: -160px; }
+    top: -160px;
+    
+   } 
+  #text-6 { // shorter dotted line
+    height: 12em;
+  } 
+}
 
-  #text-6 {
-    height: 12em; }
+@media only screen  and (min-width: 960px) and (max-width: 1024px) {
+    #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    width: 75px;
+  }  
+}  
 
-  .page-id-2 #main.site-main {
-    height: 32em; } }
-@media only screen and (min-width: 960px) and (max-width: 1024px) {
-  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image {
-    width: 75px; } }
-@media only screen and (min-width: 857px) and (max-width: 930px) {
-  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image {
-    width: 70px; }
+@media only screen  and (min-width: 857px) and (max-width: 930px) {
+    #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    width: 70px;
+    }
+    #text-4, #text-5 {//narrower text columns
+      width: 30%;
+  }  
+}
 
-  #text-4, #text-5 {
-    width: 30%; } }
-@media only screen and (min-width: 690px) and (max-width: 930px) {
-  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image {
-    width: 65px; }
+@media only screen  and (min-width: 690px) and (max-width: 930px) {
+  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    width: 65px;
+  }
+  #text-4, #text-5 {//narrower text columns
+    width: 30%;
+  }  
+  .page-id-2 .textwidget, #sticky-posts-13 { //smaller font-size
+    font-size: .85em;
+  }
+  #text-6 { //  dotted line
+   margin: 15px 15px 0 15px;
+   height: 16em;
+  } 
+}
 
-  #text-4, #text-5 {
-    width: 30%; }
+@media only screen  and (min-width: 640px) and (max-width: 690px) {
+  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    width: 60px;
+  }
+  #text-4, #text-5 {//narrower text columns
+    width: 30%;
+  }  
+  .page-id-2 .textwidget, #sticky-posts-13 { //smaller font-size
+    font-size: .85em;
+  }
+  #text-6 { //  dotted line
+   margin: 15px 10px 0 10px;
+   height: 17em;
+  } 
+  .page-id-2 #secondary.homebuckets {//make orange go all the way across, sit under slider
+    top: -100px;
+  }
+  #main.site-main {
+    height: 550px;
+  }  
+}
+*/
+@media only screen and (min-width: 972px) and (max-width: 1024px) {
+  .page-id-2 #secondary.homebuckets {
+    width: 90%;
+    margin: 0 auto;
+    display: block; }
 
-  .page-id-2 .textwidget, #sticky-posts-13 {
-    font-size: .85em; }
+  .site-content .widget-area {
+    float: none; }
 
-  #text-6 {
-    margin: 15px 15px 0 15px;
-    height: 16em; } }
-@media only screen and (min-width: 640px) and (max-width: 690px) {
   #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image {
     width: 60px; }
 
-  #text-4, #text-5 {
-    width: 30%; }
-
   .page-id-2 .textwidget, #sticky-posts-13 {
     font-size: .85em; }
 
+  #text-4, #text-5 {
+    width: 36%; }
+
   #text-6 {
     margin: 15px 10px 0 10px;
-    height: 17em; }
+    height: 10em; } }
+@media only screen and (min-width: 640px) and (max-width: 971px) {
+  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image {
+    width: 55px; }
 
-  .page-id-2 #secondary.homebuckets {
-    top: -100px; }
+  .page-id-2 .textwidget, #sticky-posts-13 {
+    font-size: .8em; } }
+@media only screen and (min-width: 640px) and (max-width: 710px) {
+  #text-5 {
+    width: 30%; }
 
-  #main.site-main {
-    height: 550px; } }
+  #text-4 {
+    width: 36%; } }
 @media only screen and (max-width: 639px) {
   .page-id-2 #secondary.homebuckets {
     top: -49px;
@@ -1432,7 +1489,8 @@ p.form-submit {
   width: 100%;
   background-color: #5e869f;
   float: left;
-  margin-top: 1.5625em; }
+  clear: both;
+  /*   margin-top: em(25); //keeps footer a bit away from bottom of content */ }
 
 .footer-menu {
   float: left;
@@ -1442,9 +1500,11 @@ p.form-submit {
   .footer-menu:last-child {
     margin-right: 0; }
 
-.page-id-2 .site-main {
-  height: 43.75em; }
-
+/*
+.page-id-2 .site-main {//make home page content area short
+  height: em(700);
+}
+*/
 #nav_menu-7 {
   border: none;
   margin-top: 1.875em;
@@ -1529,20 +1589,6 @@ p.form-submit {
 #sf_widget_constantcontact-2 input[type="submit"]:hover {
   background-color: #9ea0a3; }
 
-/*
-//follow widget
-.textwidget {
-  border: none;
-  padding: 0;
-  border-radius: 0;
- 
-  
-}  
-#text-7.widget.widget_text {  
-   float: left !important;
-   margin-top: em(30);
-}
-*/
 #social {
   text-align: center; }
   #social a:hover {

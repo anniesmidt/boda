@@ -4,7 +4,8 @@
 	width: $size__site-main;
   background-color: $blue; 
   float: left;
-  margin-top: em(25); //keeps footer a bit away from bottom of content
+  clear: both;
+/*   margin-top: em(25); //keeps footer a bit away from bottom of content */
 
 }
 
@@ -12,9 +13,11 @@
   @include span-columns(12);
 }
 
+/*
 .page-id-2 .site-main {//make home page content area short
   height: em(700);
 }
+*/
 
 
 //////////FOOTER MENU/////////////////////
@@ -121,20 +124,6 @@
   }
   
   
-/*
-//follow widget
-.textwidget {
-  border: none;
-  padding: 0;
-  border-radius: 0;
- 
-  
-}  
-#text-7.widget.widget_text {  
-   float: left !important;
-   margin-top: em(30);
-}
-*/
 
 //social
 #social {
