@@ -231,7 +231,7 @@ function create_posttype2() {
 
       'menu_position' => 6,
 			'public' => true,
-			'supports'      => array( 'title', 'thumbnail' ),
+			'supports'      => array( 'title', 'thumbnail'),
       'taxonomies' => array('category'),
 			'has_archive' => false,
 			'rewrite' => array('slug' => 'home_people'),

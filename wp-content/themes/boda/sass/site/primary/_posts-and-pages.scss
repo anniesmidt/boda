@@ -154,3 +154,64 @@ p.form-submit {
 .page-id-967 #main.site-main {//makes text go all the way across client feedback page
   width: 100%;
 }
+
+
+
+//////////////BREAKPOINTS////////////////////
+// main content margins and widget placement
+@media only screen and (max-width: 780px) {
+  #content {
+    margin-left: 1em;
+    margin-right: 5em;
+  }
+  .site-main {
+    width: 100%;
+  }
+  #secondary.widget-area {
+    width: 100%;
+    margin: 1em;
+  }
+  
+}
+
+// make gallery logos work on smaller screens
+@media only screen and (max-width: 557px) {
+  #gallery-2.gallery-item {
+    margin: 30px;
+  }
+}  
+
+//gallery logos single column on smallest screens
+@media only screen and (max-width: 400px) {
+  .gallery-icon.landscape {
+    width: 230px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+img.tooltip.alignnone.wp-image-552.size-full, img.tooltip.alignnone.wp-image-551.size-full, img.tooltip.alignnone.wp-image-1557.size-full  {
+  width: 33%;
+  }
+}
+
+
+
+//what drives us table
+@media only screen and (max-width: 640px) {//bigger text, smaller spaces
+  .page-id-59 td, .page-id-59 td a, {
+    font-size: 1.1em;
+    padding-bottom: .5em;
+  }
+  .two-topic-table table td:first-child {//bigger icons
+    width: 15%;
+  }
+}
+
+
+
+
+
+
+
+

@@ -785,6 +785,44 @@ ul.sub-menu {
   text-align: right;
   width: 50%; }
 
+@media only screen and (max-width: 780px) {
+  #masthead h1.site-title {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    float: none; }
+
+  #masthead .main-navigation {
+    float: none; }
+
+  .main-navigation ul {
+    text-align: center; }
+
+  .main-navigation ul li {
+    display: inline-block;
+    float: none; }
+
+  #masthead #site-navigation.main-navigation {
+    float: none; } }
+@media only screen and (max-width: 580px) {
+  .main-navigation {
+    font-size: .95em; }
+
+  h1.site-title img {
+    margin-top: 10px; }
+
+  .main-navigation a {
+    padding: 0 8px !important; }
+
+  #masthead #site-navigation.main-navigation {
+    float: none;
+    width: 70%;
+    margin: 0 auto; } }
+@media only screen and (min-width: 781) and (max-width: 1080px) {
+  h1.site-title {
+    margin-left: 10px; } }
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1163,6 +1201,33 @@ p.form-submit {
 .page-id-967 #main.site-main {
   width: 100%; }
 
+@media only screen and (max-width: 780px) {
+  #content {
+    margin-left: 1em;
+    margin-right: 5em; }
+
+  .site-main {
+    width: 100%; }
+
+  #secondary.widget-area {
+    width: 100%;
+    margin: 1em; } }
+@media only screen and (max-width: 557px) {
+  #gallery-2.gallery-item {
+    margin: 30px; } }
+@media only screen and (max-width: 400px) {
+  .gallery-icon.landscape {
+    width: 230px; } }
+@media only screen and (max-width: 500px) {
+  img.tooltip.alignnone.wp-image-552.size-full, img.tooltip.alignnone.wp-image-551.size-full, img.tooltip.alignnone.wp-image-1557.size-full {
+    width: 33%; } }
+@media only screen and (max-width: 640px) {
+  .page-id-59 td, .page-id-59 td a {
+    font-size: 1.1em;
+    padding-bottom: .5em; }
+
+  .two-topic-table table td:first-child {
+    width: 15%; } }
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -1188,7 +1253,7 @@ p.form-submit {
 .page-id-2 #post-2, .page-id-2 #main {
   margin: 0; }
 
-.page-id-2 .textwidget, .page-id-2 .widdget_ultimate_posts, .page-id-2 .general-widget {
+.page-id-2 .textwidget, .page-id-2 .widget_ultimate_posts, .page-id-2 .general-widget {
   width: auto; }
 
 .page-id-2 #primary, .page-id-2 #main {
@@ -1369,7 +1434,10 @@ p.form-submit {
     width: 55px; }
 
   .page-id-2 .textwidget, #sticky-posts-13 {
-    font-size: .8em; } }
+    font-size: .8em; }
+
+  .page-id-2 #content {
+    margin: 0; } }
 @media only screen and (min-width: 640px) and (max-width: 710px) {
   #text-5 {
     width: 30%; }
@@ -1378,10 +1446,13 @@ p.form-submit {
     width: 36%; } }
 @media only screen and (max-width: 639px) {
   .page-id-2 #secondary.homebuckets {
-    top: -49px;
+    top: 0;
     width: 100%;
     margin: 0;
     border-radius: 0; }
+
+  .page-id-2 #content {
+    margin: 0; }
 
   #hwim-22, #text-4, #text-5, #sticky-posts-13 {
     float: none;
@@ -1492,8 +1563,7 @@ p.form-submit {
   width: 100%;
   background-color: #5e869f;
   float: left;
-  clear: both;
-  /*   margin-top: em(25); //keeps footer a bit away from bottom of content */ }
+  clear: both; }
 
 .footer-menu {
   float: left;
@@ -1503,11 +1573,6 @@ p.form-submit {
   .footer-menu:last-child {
     margin-right: 0; }
 
-/*
-.page-id-2 .site-main {//make home page content area short
-  height: em(700);
-}
-*/
 #nav_menu-7 {
   border: none;
   margin-top: 1.875em;
@@ -1603,6 +1668,44 @@ p.form-submit {
   text-align: center;
   padding-bottom: 0.625em; }
 
+@media only screen and (max-width: 960px) {
+  #nav_menu-7 ul li {
+    display: block; } }
+@media only screen and (max-width: 770px) {
+  #nav_menu-7 {
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    float: none;
+    width: 30%; }
+
+  #secondary.widget-area {
+    width: 100%; }
+
+  #sf_widget_constantcontact-2 {
+    float: none;
+    margin: 0 auto;
+    border-left: 0;
+    border-top: 1pt white dotted; }
+
+  #sf_widget_constantcontact-2.widget.widget_sf_widget_constantcontact {
+    float: none;
+    border: none;
+    clear: none;
+    display: block;
+    margin: 0;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 100%; }
+
+  #sf_widget_constantcontact-2 h1.widget-title, .constantcontactwidget_form {
+    text-align: center; }
+
+  #sf_widget_constantcontact-2 input[type="submit"] {
+    float: none;
+    margin-bottom: 30px; } }
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

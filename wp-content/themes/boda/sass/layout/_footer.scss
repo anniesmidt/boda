@@ -5,19 +5,12 @@
   background-color: $blue; 
   float: left;
   clear: both;
-/*   margin-top: em(25); //keeps footer a bit away from bottom of content */
-
 }
 
 .footer-menu {
   @include span-columns(12);
 }
 
-/*
-.page-id-2 .site-main {//make home page content area short
-  height: em(700);
-}
-*/
 
 
 //////////FOOTER MENU/////////////////////
@@ -139,6 +132,65 @@
   font-size: .8em;
   font-color: $dkgrey;
   text-align: center;
-  padding-bottom: em(10);
-  
+  padding-bottom: em(10); 
 }
+
+
+
+////////////BREAKPOINTS//////////////
+@media only screen and (max-width: 960px) {  
+#nav_menu-7 ul li {
+  display: block;
+  }
+}
+
+@media only screen and (max-width: 770px) {  
+#nav_menu-7 {
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  float: none;
+  width: 30%;
+  }
+#secondary.widget-area {
+  width: 100%
+  }
+#sf_widget_constantcontact-2 {
+    float: none;
+    margin: 0 auto;
+    border-left: 0;
+    border-top: 1pt white dotted;
+} 
+#sf_widget_constantcontact-2.widget.widget_sf_widget_constantcontact {
+  float: none;
+  border: none;
+  clear: none;
+  display: block;
+  margin: 0;
+  margin-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-top: 0px;
+  width: 100%
+  }
+#sf_widget_constantcontact-2 h1.widget-title, .constantcontactwidget_form{
+  text-align: center;
+}  
+#sf_widget_constantcontact-2 input[type="submit"]{
+  float: none;
+  margin-bottom: 30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

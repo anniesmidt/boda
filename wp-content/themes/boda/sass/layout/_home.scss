@@ -12,7 +12,7 @@
   margin: 0;
 }
 
-.page-id-2 .textwidget, .page-id-2 .widdget_ultimate_posts, .page-id-2 .general-widget {//for IE
+.page-id-2 .textwidget, .page-id-2 .widget_ultimate_posts, .page-id-2 .general-widget {//for IE
   width: auto;
 }
 
@@ -208,7 +208,7 @@
      display: block;
    }
 
-   .site-content .widget-area {// let's orange block be centered
+   .site-content .widget-area {// lets orange block be centered
      float: none;
    }
 
@@ -241,6 +241,9 @@
      .page-id-2 .textwidget, #sticky-posts-13 { //smaller font-size
     font-size: .8em;
     }
+   .page-id-2 #content {
+    margin: 0;
+  }
  }
 
 
@@ -261,10 +264,13 @@
 //////SMALLest and MOBILE////
 @media only screen and (max-width: 639px) {
   .page-id-2 #secondary.homebuckets {//make orange go all the way across, sit under slider
-    top: -49px;
+    top: 0;
     width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+  .page-id-2 #content {
+    margin: 0;
   }
   #hwim-22, #text-4, #text-5, #sticky-posts-13 {// get rid of all the floats so stuff stacks
     float: none;
