@@ -1188,6 +1188,9 @@ p.form-submit {
 .page-id-2 #post-2, .page-id-2 #main {
   margin: 0; }
 
+.page-id-2 .textwidget, .page-id-2 .widdget_ultimate_posts, .page-id-2 .general-widget {
+  width: auto; }
+
 .page-id-2 #primary, .page-id-2 #main {
   width: 100%; }
 
