@@ -1293,7 +1293,7 @@ p.form-submit {
   margin-left: 25px;
   margin-top: 25px; }
 
-.page-id-2 img.attachment-thumbnail.wp-post-image {
+.page-id-2 img.aligncenter {
   float: right;
   width: 100px;
   margin-right: 25px;
@@ -1303,7 +1303,7 @@ p.form-submit {
 .widget_ultimate_posts {
   width: initial; }
 
-#hwim-22 img, .page-id-2 img.attachment-thumbnail.wp-post-image {
+#hwim-22 img, .page-id-2 img.aligncenter {
   border-radius: 50%; }
 
 #text-4 {
