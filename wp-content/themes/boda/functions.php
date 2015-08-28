@@ -231,7 +231,7 @@ function create_posttype2() {
 
       'menu_position' => 6,
 			'public' => true,
-			'supports'      => array( 'title', 'thumbnail'),
+			'supports'      => array( 'title', 'editor'),
       'taxonomies' => array('category'),
 			'has_archive' => false,
 			'rewrite' => array('slug' => 'home_people'),
@@ -240,7 +240,6 @@ function create_posttype2() {
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype2' );
-
 
 
 

@@ -29,7 +29,7 @@
 
 ////WIDGETS WITHOUT TITLES/////
 /*hides titles can be used on widget in CMS but won't display on page*/
-.widget_ultimate_posts h1, .widget_text h1, .widget_hwim h1.widget-title {
+.widget_ultimate_posts h1, .widget_text h1, .widget_hwim h1.widget-title, .widget-2 h1 {
   display: none;
 }
 
