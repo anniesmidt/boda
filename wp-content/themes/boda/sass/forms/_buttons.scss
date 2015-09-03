@@ -12,7 +12,6 @@ input[type="submit"] {
 	@include font-size(1.1);
 	line-height: 1;
 	padding: .6em 1em .65em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 
 	&:hover {
 		background-color: $blue
@@ -43,6 +42,7 @@ border-color: $color__border-button-focus;
   line-height: 1.4em;
   border-radius: 15px;
   text-shadow: none;
+  width: 100%;
 }
 
 .md-trigger:hover {
@@ -51,7 +51,7 @@ border-color: $color__border-button-focus;
 
 .md-show.md-effect-1 .md-content {
   transform: scale(.75);
-  width: 100%;
+  width: 90%;
   max-width: 100%;
 }
 .md-modal {
@@ -74,6 +74,11 @@ border-color: $color__border-button-focus;
 }
 
 
-
+//types of services icons/buttons //
+@media screen and (max-width: 1000px) {
+  img.tooltip {
+    width: 30%;
+  }
+}
 
 

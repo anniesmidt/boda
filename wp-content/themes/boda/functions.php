@@ -331,6 +331,21 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
+// Replaces the excerpt "more" text by a link
+function custom_excerpt($text) {  // custom 'read more' link
+   if (strpos($text, '[...]')) {
+      $excerpt = strip_tags(str_replace('[...]', '... <a href="'.get_permalink().'">read more...</a>', $text), "<a>");
+   } else {
+      $excerpt = '<p>' . $text . '<a href="'.get_permalink().'">read more...</a></p>';
+   }
+   return $excerpt;
+}
+add_filter('the_excerpt', 'custom_excerpt');
+
+
+
+
+
 
 //Enqueue scripts and styles.
 

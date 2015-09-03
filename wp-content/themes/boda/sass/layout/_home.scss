@@ -212,7 +212,7 @@
      float: none;
    }
 
-    #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    #hwim-22, .page-id-2 img.aligncenter { //smaller pix
     width: 60px;
     } 
     
@@ -234,7 +234,7 @@
 @media only screen  and (min-width: 640px) and (max-width: 971px) {
 
     
-    #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image { //smaller pix
+    #hwim-22, .page-id-2 img.aligncenter { //smaller pix
     width: 55px;
     } 
  
@@ -292,7 +292,7 @@
   #text-5 { // space between two text blocks
     padding-top: 35px;
   }
-  .page-id-2 img.attachment-thumbnail.wp-post-image {//second pic centered at bottom
+  .page-id-2 img.aligncenter {//second pic centered at bottom
     margin-bottom: 25px;
     width: 100px;
     margin-right: 0;

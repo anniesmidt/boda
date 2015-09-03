@@ -33,18 +33,23 @@ ul {
     list-style: none;
 }
 
-li {
+ul li {
     position: relative;
     padding-left: 0.4em; /* text distance to icon */
     font-family: $verd;
+    list-style: none;
 
 }
 
-li:before {
+ul li:before {
         font-family: 'FontAwesome';
         content: '\f105';
         position: absolute;
         left: -1em; /* same as ul padding-left */
         top: 0em; /* depends on character, maybe use padding-top instead */
         color: $orange;
+}
+
+.page-id-19 ul#menu-case-studies li:before {
+    content: none;
 }

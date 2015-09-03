@@ -19,6 +19,8 @@ table   {
 }
 */
 
+
+
 .two-topic-table {//spans the page
   float: left;
   width: 100%;
@@ -38,19 +40,20 @@ table   {
         }
         td {// but the other cells, with icons and text, align top
           vertical-align: top;
+          padding-top: 0;
         }
                 
     }
 }
 
 
+
 table {
   border-collapse: separate;
-  border: 1px $ltgrey dotted;
 }
 
 td {
-  border-left: 1px $ltgrey dotted;
+/*   border: 1px $ltgrey dotted; */
     td {
     border-left: none;
     padding-right: 1em;
@@ -63,6 +66,11 @@ td {
 
 
 
+
+
+
+
+
 .drives-us-icon {
   width: 216px;
   height: 216px;
@@ -70,6 +78,7 @@ td {
 
 img.drives-us-category  {
   margin-top: em(10);
+  margin-bottom: em(10);
 }
 
 .page-id-59 #main {

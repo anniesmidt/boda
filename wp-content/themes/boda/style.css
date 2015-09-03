@@ -431,13 +431,14 @@ ul {
   /* make space for li's :before */
   list-style: none; }
 
-li {
+ul li {
   position: relative;
   padding-left: 0.4em;
   /* text distance to icon */
-  font-family: Verdana; }
+  font-family: Verdana;
+  list-style: none; }
 
-li:before {
+ul li:before {
   font-family: 'FontAwesome';
   content: '\f105';
   position: absolute;
@@ -446,6 +447,9 @@ li:before {
   top: 0em;
   /* depends on character, maybe use padding-top instead */
   color: #ff9e15; }
+
+.page-id-19 ul#menu-case-studies li:before {
+  content: none; }
 
 img {
   height: auto;
@@ -486,14 +490,14 @@ table   {
       text-align: right;
       padding-right: 15px; }
     .two-topic-table table td {
-      vertical-align: top; }
+      vertical-align: top;
+      padding-top: 0; }
 
 table {
-  border-collapse: separate;
-  border: 1px #9ea0a3 dotted; }
+  border-collapse: separate; }
 
 td {
-  border-left: 1px #9ea0a3 dotted; }
+  /*   border: 1px $ltgrey dotted; */ }
   td td {
     border-left: none;
     padding-right: 1em;
@@ -506,7 +510,8 @@ td {
   height: 216px; }
 
 img.drives-us-category {
-  margin-top: 0.625em; }
+  margin-top: 0.625em;
+  margin-bottom: 0.625em; }
 
 .page-id-59 #main {
   float: left;
@@ -533,8 +538,7 @@ input[type="submit"] {
   font-size: 17.6px;
   font-size: 1.1rem;
   line-height: 1;
-  padding: .6em 1em .65em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .6em 1em .65em; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -564,14 +568,15 @@ input[type="submit"] {
   font-family: "Montserrat";
   line-height: 1.4em;
   border-radius: 15px;
-  text-shadow: none; }
+  text-shadow: none;
+  width: 100%; }
 
 .md-trigger:hover {
   background-color: #9ea0a3; }
 
 .md-show.md-effect-1 .md-content {
   transform: scale(0.75);
-  width: 100%;
+  width: 90%;
   max-width: 100%; }
 
 .md-modal {
@@ -589,6 +594,9 @@ input[type="submit"] {
   border: none !important;
   padding: 0; }
 
+@media screen and (max-width: 1000px) {
+  img.tooltip {
+    width: 30%; } }
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -708,7 +716,7 @@ a {
   .main-navigation .current_page_ancestor > a {
     background-color: #ff9e15;
     color: white;
-    padding-bottom: 15px; }
+    /* 	  padding-bottom: 15px; */ }
 
 .main-navigation li {
   font-size: 1.1em;
@@ -943,6 +951,10 @@ h1.blog-widget-title, h1.newsletter-widget-title, h1.general-widget-title {
 
 .blog-widget {
   width: 100%; }
+
+.bio-pages-menu {
+  padding-bottom: 0 !important;
+  padding-top: 6px !important; }
 
 .client-quote, .custom-field-Quote {
   font-family: Verdana;
@@ -1201,6 +1213,9 @@ p.form-submit {
 .page-id-967 #main.site-main {
   width: 100%; }
 
+.error-content {
+  padding-bottom: 300px; }
+
 @media only screen and (max-width: 780px) {
   #content {
     margin-left: 1em;
@@ -1221,13 +1236,17 @@ p.form-submit {
 @media only screen and (max-width: 500px) {
   img.tooltip.alignnone.wp-image-552.size-full, img.tooltip.alignnone.wp-image-551.size-full, img.tooltip.alignnone.wp-image-1557.size-full {
     width: 33%; } }
-@media only screen and (max-width: 640px) {
-  .page-id-59 td, .page-id-59 td a {
+/*
+@media only screen and (max-width: 640px) {//bigger text, smaller spaces
+  .page-id-59 td, .page-id-59 td a, {
     font-size: 1.1em;
-    padding-bottom: .5em; }
-
-  .two-topic-table table td:first-child {
-    width: 15%; } }
+    padding-bottom: .5em;
+  }
+  .two-topic-table table td:first-child {//bigger icons
+    width: 15%;
+  }
+}
+*/
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -1417,7 +1436,7 @@ p.form-submit {
   .site-content .widget-area {
     float: none; }
 
-  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image {
+  #hwim-22, .page-id-2 img.aligncenter {
     width: 60px; }
 
   .page-id-2 .textwidget, #sticky-posts-13 {
@@ -1430,7 +1449,7 @@ p.form-submit {
     margin: 15px 10px 0 10px;
     height: 10em; } }
 @media only screen and (min-width: 640px) and (max-width: 971px) {
-  #hwim-22, .page-id-2 img.attachment-thumbnail.wp-post-image {
+  #hwim-22, .page-id-2 img.aligncenter {
     width: 55px; }
 
   .page-id-2 .textwidget, #sticky-posts-13 {
@@ -1474,7 +1493,7 @@ p.form-submit {
   #text-5 {
     padding-top: 35px; }
 
-  .page-id-2 img.attachment-thumbnail.wp-post-image {
+  .page-id-2 img.aligncenter {
     margin-bottom: 25px;
     width: 100px;
     margin-right: 0; }
@@ -1532,11 +1551,14 @@ p.form-submit {
       top: -.2em;
       /* depends on character, maybe use padding-top instead */
       color: #5e869f;
-      font-size: 1.5em; }
-    .page-id-19 #content ul li a {
+      font-size: 1.5em;
+      list-style: none; }
+    .page-id-19 #content ul li a:link {
       color: #ff9e15; }
     .page-id-19 #content ul li a:hover, .page-id-19 #content ul li a:active {
       color: #5e869f; }
+    .page-id-19 #content ul li a:visited {
+      color: #9ea0a3; }
 
 .case-prev-next {
   padding: .25em;

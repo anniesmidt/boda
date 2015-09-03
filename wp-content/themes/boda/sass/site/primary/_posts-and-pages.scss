@@ -156,6 +156,11 @@ p.form-submit {
 }
 
 
+.error-content {
+  padding-bottom: 300px;
+}
+
+
 
 //////////////BREAKPOINTS////////////////////
 // main content margins and widget placement
@@ -198,6 +203,7 @@ img.tooltip.alignnone.wp-image-552.size-full, img.tooltip.alignnone.wp-image-551
 
 
 //what drives us table
+/*
 @media only screen and (max-width: 640px) {//bigger text, smaller spaces
   .page-id-59 td, .page-id-59 td a, {
     font-size: 1.1em;
@@ -207,6 +213,7 @@ img.tooltip.alignnone.wp-image-552.size-full, img.tooltip.alignnone.wp-image-551
     width: 15%;
   }
 }
+*/
 
 
 

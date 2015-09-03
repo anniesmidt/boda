@@ -13,7 +13,7 @@
         padding-left: 0;
         width: 100%;
         }
-      }
+    }
   }
     
     ul {
@@ -36,13 +36,17 @@
           top: -.2em; /* depends on character, maybe use padding-top instead */
           color: $blue;
           font-size: 1.5em;
+          list-style: none;
           }
-        a {
+        a:link {
           color: $orange;
         }
         a:hover, a:active {
           color: $blue;
-      }          
+        }
+        a:visited {
+          color: $ltgrey;
+        }          
     }
   }
 }

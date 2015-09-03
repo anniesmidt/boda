@@ -19,7 +19,7 @@
       </div>
 			
 			<div id="social">
-			<a href="http://wwww.twitter.com/bodagroup"><img src="http://boda.durablecreative.com/wp-content/uploads/2015/07/twitter-3-24.png"></a>
+			<a href="http://www.twitter.com/thebodagroup"><img src="http://boda.durablecreative.com/wp-content/uploads/2015/07/twitter-3-24.png"></a>
 			&nbsp;
 			<a href="https://www.linkedin.com/company/the-boda-group"><img src="http://boda.durablecreative.com/wp-content/uploads/2015/07/linkedin-3-24.png"></a>
 			</div>
